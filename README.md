@@ -1,10 +1,16 @@
+# Sarman
 
-Para correr el programa
+## Instrucciones para ejecutar el programa
 
--Abrir Docker
--Ya en la terminal se posicionan en la carpeta del proyecto
--En la terminal corren 3 lineas:
+Para poner en funcionamiento el programa utilizando Docker, sigue estos pasos:
 
-docker-compose build
-docker-compose up -d
-docker-compose down
+1. Abre Docker en tu sistema.
+
+2. En la terminal, navega hasta la carpeta del proyecto.
+
+3. Ejecuta las siguientes tres líneas de comandos en la terminal:
+
+   ```bash
+   docker-compose build
+   docker-compose up -d
+   docker-compose down
