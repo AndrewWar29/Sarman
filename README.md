@@ -1,4 +1,3 @@
-# sarman
 
 Para correr el programa
 
