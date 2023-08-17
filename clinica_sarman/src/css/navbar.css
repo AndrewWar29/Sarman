@@ -1,0 +1,25 @@
+.logo_de_marca{
+    width: 70px;
+}
+
+.linkText{ 
+    color: white;
+    text-decoration:none; 
+}
+
+.linkText:hover{ 
+    color: black ;
+}
+
+.navegacion.navbar {
+    background-color: #04b4ff;
+}
+
+.justify-content-end{
+    text-align: left;
+
+}
+
+.navbar  a {
+    font-size: 18px;
+}

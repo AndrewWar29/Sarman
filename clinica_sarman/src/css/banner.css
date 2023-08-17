@@ -1,0 +1,14 @@
+.banner-blue {
+  background-color: #04b4ff;
+  text-align: center;
+  padding: 15px;
+}
+.banner-white{
+  background-color: white;
+  text-align: center;
+  padding: 5px;
+}
+
+.logo {
+  max-width: 250px; /* Adjust the size as needed */
+}

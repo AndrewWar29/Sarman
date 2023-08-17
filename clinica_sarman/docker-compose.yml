@@ -1,0 +1,20 @@
+version: "3.2"
+services:
+  frontend:
+    restart: always
+    container_name: frontend
+    build:
+      context: .
+      dockerfile: dockerfile
+    volumes:
+    #Vamos a crear un volumen de la carpeta src, para que constantemente se actualice src en el contenedor
+    #Se ven los cambios sin hacer build una y otra vez
+    - ./src:/app/src
+    ports:
+      - "3000:3000"
+    #Esta linea de código permite en windows que funcione el mount build
+    environment:
+      - WATCHPACK_POLLING=true
+    stdin_open: true
+    tty: true
+    command: npm start
