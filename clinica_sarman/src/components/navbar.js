@@ -7,7 +7,7 @@ import { AiOutlineHome } from "react-icons/ai";
 import { AiOutlineInfoCircle} from "react-icons/ai";
 import { FaUserDoctor } from "react-icons/fa6";
 import { MdOutlineMedicalServices } from "react-icons/md";
-import { AiOutlinePhone } from "react-icons/ai";
+import { BsTelephone } from "react-icons/bs";
 // <Navbar.Brand href="/"><img className="logo_de_marca" src={logo} alt="logo"/></Navbar.Brand>
 
 
@@ -25,7 +25,7 @@ function Navigation_bar() {
                 <Nav.Link href="/nosotros"><a className="linkText" href="/nosotros"><AiOutlineInfoCircle/> Nosotros</a></Nav.Link>
                 <Nav.Link href="/profesionales"><a className="linkText" href="/profesionales"><FaUserDoctor/> Profesionales </a></Nav.Link>
                 <Nav.Link href="/servicios"><a className="linkText" href="/servicios"><MdOutlineMedicalServices/> Servicios </a></Nav.Link>
-                <Nav.Link href="/contacto"><a className="linkText" href="/contacto"><AiOutlinePhone/> Contacto</a></Nav.Link>
+                <Nav.Link href="/contacto"><a className="linkText" href="/contacto"><BsTelephone/> Contacto</a></Nav.Link>
             </Nav>
             </Navbar.Collapse>
             </Nav>

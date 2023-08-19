@@ -1,0 +1,57 @@
+/* Estilos para el contenedor de servicios */
+.column-md-4 {
+    flex: 0 0 33.3333%; /* Ancho de 33.3333% para que haya tres columnas en una fila */
+    max-width: 33.3333%;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+  
+  .cont-serv {
+    padding: 20px;
+    background-color: #f7f7f7;
+  }
+  
+  /* Estilos para el encabezado */
+  .cont-serv-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .cont-serv-icon {
+    font-size: 30px;
+    margin-right: 10px;
+  }
+  
+  /* Estilos para los cuadros de texto de servicios */
+  .service-box {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilos para el contenido del servicio */
+  .service {
+    color: #333;
+  }
+  
+  .service h3 {
+    margin: 0;
+    font-size: 26px;
+  }
+  
+  .service p {
+    color: #333;
+    margin: 10px 0;
+    font-size: 18px;
+  }
+  
+  .service p:last-child {
+    margin-bottom: 0;
+  } 
+  
+  .service img{
+    max-width: 40 px;
+  }

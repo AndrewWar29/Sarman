@@ -5,6 +5,7 @@ import { Navigation_bar} from "../components/navbar";
 import { Carrusel} from "../components/carrusel";
 import { Banner} from "../components/banner";
 import { Footer} from "../components/footer";
+import { Boxes} from "../components/home_content";
 
 
 //Home page content
@@ -14,6 +15,7 @@ function Home() {
       <Banner/>
       <Navigation_bar/>
       <Carrusel/>
+      <Boxes/>
       <Footer/>
       </React.Fragment>
     );
