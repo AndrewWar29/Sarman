@@ -1,0 +1,30 @@
+/* Add margin to the images and adjust their size */
+.doctor-image {
+    width: 300px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  /* Add margin to the cards */
+  .aboutus-box {
+  }
+
+  .center-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Ensure the image takes up the entire card height */
+  }
+
+  .center-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+
+  
+  /* Additional CSS for your existing styles */
+  /* ... */
+  
