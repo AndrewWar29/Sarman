@@ -1,37 +1,60 @@
-import React from "react";
+import React, { useState } from "react";
 import "../css/contact_content.css";
 import Card from 'react-bootstrap/Card';
 import Row from 'react-bootstrap/Row';
-import Button from 'react-bootstrap/Button'; // Import the Bootstrap button component
-import { BsWhatsapp} from "react-icons/bs";
+import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
+import { BsWhatsapp } from "react-icons/bs";
 
 import alvaroImage from '../images/alvaro.png';
 import constanzaImage from '../images/constanza.png';
 import pabloImage from '../images/pablo.png';
 
-// Define WhatsApp numbers and data for each doctor
 const doctorsData = [
   {
     name: 'Dr. Alvaro Moraga',
     image: alvaroImage,
-    number: '+56994044224', // Replace with the actual number
-    message: 'Hello Alvaro, I would like to make an appointment.'
+    number: '+56994044224',
   },
   {
     name: 'Dra. Constanza Nuñez',
     image: constanzaImage,
-    number: '+56966415463', // Replace with the actual number
-    message: 'Hi Constanza, I have some questions about your services.'
+    number: '+56966415463',
   },
   {
     name: 'Dr. Pablo Sarce',
     image: pabloImage,
-    number: '+56995432254', // Replace with the actual number
-    message: 'Hi Pablo, can you help me with a health concern?'
+    number: '+56995432254',
   },
 ];
 
 function Contact_content() {
+  const [formData, setFormData] = useState({
+    name: '',
+    lastName: '',
+    phoneNumber: '',
+    rut: '',
+    email: '',
+    procedure: '',
+  });
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  const handleSubmit = (doctor) => {
+    const { name, lastName, phoneNumber, rut, email, procedure } = formData;
+    
+    const whatsappMessage = `Hola ${doctor.name}, estoy interesado en el procedimiento de ${procedure}. Mis datos son los siguientes:\n\nNombre y apellido: ${name} ${lastName}\nNúmero de teléfono: ${phoneNumber}\nRUT: ${rut}\nCorreo: ${email}`;
+    
+    const whatsappURL = `https://wa.me/${doctor.number}?text=${encodeURIComponent(whatsappMessage)}`;
+    window.open(whatsappURL, '_blank');
+  };
+
   return (
     <>
       <Card>
@@ -52,15 +75,69 @@ function Contact_content() {
                 <Card.Text className="card-text1 text-center">
                   {doctor.name}
                 </Card.Text>
-                <Button
-                  variant="primary" // You can change the variant as needed
-                  href={`https://wa.me/${doctor.number}?text=${encodeURIComponent(doctor.message)}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="whatsapp-button"
-                >
-                  Contactar por WhatsApp <BsWhatsapp/>
-                </Button>
+                <Form>
+                  <Form.Group controlId={`name-${index}`}>
+                    <Form.Control
+                      type="text"
+                      name="name"
+                      placeholder="Nombre"
+                      value={formData.name}
+                      onChange={handleInputChange}
+                    />
+                  </Form.Group>
+                  <Form.Group controlId={`lastName-${index}`}>
+                    <Form.Control
+                      type="text"
+                      name="lastName"
+                      placeholder="Apellido"
+                      value={formData.lastName}
+                      onChange={handleInputChange}
+                    />
+                  </Form.Group>
+                  <Form.Group controlId={`phoneNumber-${index}`}>
+                    <Form.Control
+                      type="text"
+                      name="phoneNumber"
+                      placeholder="Número de teléfono"
+                      value={formData.phoneNumber}
+                      onChange={handleInputChange}
+                    />
+                  </Form.Group>
+                  <Form.Group controlId={`rut-${index}`}>
+                    <Form.Control
+                      type="text"
+                      name="rut"
+                      placeholder="RUT"
+                      value={formData.rut}
+                      onChange={handleInputChange}
+                    />
+                  </Form.Group>
+                  <Form.Group controlId={`email-${index}`}>
+                    <Form.Control
+                      type="email"
+                      name="email"
+                      placeholder="Correo electrónico"
+                      value={formData.email}
+                      onChange={handleInputChange}
+                    />
+                  </Form.Group>
+                  <Form.Group controlId={`procedure-${index}`}>
+                    <Form.Control
+                      type="text"
+                      name="procedure"
+                      placeholder="Procedimiento de interés"
+                      value={formData.procedure}
+                      onChange={handleInputChange}
+                    />
+                  </Form.Group>
+                  <Button
+                    variant="primary"
+                    onClick={() => handleSubmit(doctor)}
+                    className="whatsapp-button"
+                  >
+                    Contactar por WhatsApp <BsWhatsapp />
+                  </Button>
+                </Form>
               </Card.Body>
             </div>
           </Card>
