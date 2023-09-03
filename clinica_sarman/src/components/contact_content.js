@@ -38,6 +38,9 @@ function Contact_content() {
     procedure: '',
   });
 
+  const [selectedDoctor, setSelectedDoctor] = useState(null);
+  const [submitting, setSubmitting] = useState(false); // Track form submission state
+
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData({
@@ -46,13 +49,37 @@ function Contact_content() {
     });
   };
 
-  const handleSubmit = (doctor) => {
-    const { name, lastName, phoneNumber, rut, email, procedure } = formData;
-    
-    const whatsappMessage = `Hola ${doctor.name}, estoy interesado en el procedimiento de ${procedure}. Mis datos son los siguientes:\n\nNombre y apellido: ${name} ${lastName}\nNúmero de teléfono: ${phoneNumber}\nRUT: ${rut}\nCorreo: ${email}`;
-    
-    const whatsappURL = `https://wa.me/${doctor.number}?text=${encodeURIComponent(whatsappMessage)}`;
-    window.open(whatsappURL, '_blank');
+  const handleDoctorSelect = (doctor) => {
+    if (selectedDoctor === doctor) {
+      // If the same doctor is clicked again, reset the form
+      setSelectedDoctor(null);
+      setFormData({
+        name: '',
+        lastName: '',
+        phoneNumber: '',
+        rut: '',
+        email: '',
+        procedure: '',
+      });
+    } else {
+      setSelectedDoctor(doctor);
+    }
+  };
+
+  const handleSubmit = () => {
+    if (selectedDoctor) {
+      setSubmitting(true); // Set submitting state to true while sending message
+      const { name, lastName, phoneNumber, rut, email, procedure } = formData;
+      const doctor = selectedDoctor;
+      const whatsappMessage = `Hola ${doctor.name}, estoy interesado en el procedimiento de ${procedure}. Mis datos son los siguientes:\n\nNombre y apellido: ${name} ${lastName}\nNúmero de teléfono: ${phoneNumber}\nRUT: ${rut}\nCorreo: ${email}`;
+      const whatsappURL = `https://wa.me/${doctor.number}?text=${encodeURIComponent(whatsappMessage)}`;
+      
+      // Simulate a delay to show "Contactando a Dr. [Doctor's Name]..."
+      setTimeout(() => {
+        window.open(whatsappURL, '_blank');
+        setSubmitting(false); // Reset submitting state
+      }, 1500); // Adjust the delay time as needed
+    }
   };
 
   return (
@@ -75,74 +102,96 @@ function Contact_content() {
                 <Card.Text className="card-text1 text-center">
                   {doctor.name}
                 </Card.Text>
-                <Form>
-                  <Form.Group controlId={`name-${index}`}>
-                    <Form.Control
-                      type="text"
-                      name="name"
-                      placeholder="Nombre"
-                      value={formData.name}
-                      onChange={handleInputChange}
-                    />
-                  </Form.Group>
-                  <Form.Group controlId={`lastName-${index}`}>
-                    <Form.Control
-                      type="text"
-                      name="lastName"
-                      placeholder="Apellido"
-                      value={formData.lastName}
-                      onChange={handleInputChange}
-                    />
-                  </Form.Group>
-                  <Form.Group controlId={`phoneNumber-${index}`}>
-                    <Form.Control
-                      type="text"
-                      name="phoneNumber"
-                      placeholder="Número de teléfono"
-                      value={formData.phoneNumber}
-                      onChange={handleInputChange}
-                    />
-                  </Form.Group>
-                  <Form.Group controlId={`rut-${index}`}>
-                    <Form.Control
-                      type="text"
-                      name="rut"
-                      placeholder="RUT"
-                      value={formData.rut}
-                      onChange={handleInputChange}
-                    />
-                  </Form.Group>
-                  <Form.Group controlId={`email-${index}`}>
-                    <Form.Control
-                      type="email"
-                      name="email"
-                      placeholder="Correo electrónico"
-                      value={formData.email}
-                      onChange={handleInputChange}
-                    />
-                  </Form.Group>
-                  <Form.Group controlId={`procedure-${index}`}>
-                    <Form.Control
-                      type="text"
-                      name="procedure"
-                      placeholder="Procedimiento de interés"
-                      value={formData.procedure}
-                      onChange={handleInputChange}
-                    />
-                  </Form.Group>
-                  <Button
-                    variant="primary"
-                    onClick={() => handleSubmit(doctor)}
-                    className="whatsapp-button"
-                  >
-                    Contactar por WhatsApp <BsWhatsapp />
-                  </Button>
-                </Form>
+                <Button
+                  variant="primary"
+                  onClick={() => handleDoctorSelect(doctor)}
+                  className="whatsapp-button"
+                >
+                  Contactar por WhatsApp <BsWhatsapp />
+                </Button>
               </Card.Body>
             </div>
           </Card>
         ))}
       </Row>
+
+      {selectedDoctor && (
+        <Card>
+          <Card.Body className="aboutus-card1">
+            <Card.Text className="aboutus-text1">Contactando a {selectedDoctor.name}</Card.Text>
+            <Form>
+              <Form.Group controlId="name">
+                <Form.Control
+                  type="text"
+                  name="name"
+                  placeholder="Nombre"
+                  value={formData.name}
+                  onChange={handleInputChange}
+                />
+              </Form.Group>
+              <Form.Group controlId="lastName">
+                <Form.Control
+                  type="text"
+                  name="lastName"
+                  placeholder="Apellido"
+                  value={formData.lastName}
+                  onChange={handleInputChange}
+                />
+              </Form.Group>
+              <Form.Group controlId="phoneNumber">
+                <Form.Control
+                  type="text"
+                  name="phoneNumber"
+                  placeholder="Número de teléfono"
+                  value={formData.phoneNumber}
+                  onChange={handleInputChange}
+                />
+              </Form.Group>
+              <Form.Group controlId="rut">
+                <Form.Control
+                  type="text"
+                  name="rut"
+                  placeholder="RUT"
+                  value={formData.rut}
+                  onChange={handleInputChange}
+                />
+              </Form.Group>
+              <Form.Group controlId="email">
+                <Form.Control
+                  type="email"
+                  name="email"
+                  placeholder="Correo electrónico"
+                  value={formData.email}
+                  onChange={handleInputChange}
+                />
+              </Form.Group>
+              <Form.Group controlId="procedure">
+                <Form.Control
+                  type="text"
+                  name="procedure"
+                  placeholder="Procedimiento de interés"
+                  value={formData.procedure}
+                  onChange={handleInputChange}
+                />
+              </Form.Group>
+              {submitting ? (
+                <Button variant="primary" disabled>
+                  Enviando <BsWhatsapp />
+                </Button>
+              ) : (
+                <Button
+                  variant="primary"
+                  onClick={handleSubmit}
+                  className="whatsapp-button"
+                >
+                  Enviar Mensaje <BsWhatsapp />
+                </Button>
+              )}
+            </Form>
+          </Card.Body>
+        </Card>
+      )}
+
       <Card>
         <Card.Body className="aboutus-card1">
           <Card.Text className="aboutus-text1">Ubicación</Card.Text>
