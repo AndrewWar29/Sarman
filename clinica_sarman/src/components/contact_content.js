@@ -192,14 +192,6 @@ function Contact_content() {
         </Card>
       )}
 
-      <Card>
-        <Card.Body className="aboutus-card1">
-          <Card.Text className="aboutus-text1">Ubicación</Card.Text>
-          <Card.Text className="aboutus-text2">
-            Edificio VALLE DE COPIAPO - Colipi 570, Edificio VALLE DE COPIAPO, Oficina 221, Copiapó, Atacama
-          </Card.Text>
-        </Card.Body>
-      </Card>
     </>
   );
 }
