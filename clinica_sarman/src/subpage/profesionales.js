@@ -7,13 +7,10 @@ import {Card_pro_1} from "../components/card_pro_1";
 function Doctors() {
     return (
       <React.Fragment>
-
       <Banner/>
       <Navigation_bar/>
       <Card_pro_1/>
-
       <Footer/>
-
       </React.Fragment>
     );
   }
