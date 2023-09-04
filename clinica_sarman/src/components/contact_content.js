@@ -95,7 +95,8 @@ function Contact_content() {
 
       <Row xs={1} md={3} className="g-4">
         {doctorsData.map((doctor, index) => (
-          <Card className="aboutus-box" key={index}>
+          <div className="centered-container">
+          <Card className="aboutus-box-cont card_cont" key={index}>
             <div className="center-content">
               <Card.Img variant="top" src={doctor.image} className="doctor-image" />
               <Card.Body>
@@ -112,6 +113,7 @@ function Contact_content() {
               </Card.Body>
             </div>
           </Card>
+          </div>
         ))}
       </Row>
 

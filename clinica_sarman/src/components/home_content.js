@@ -12,8 +12,8 @@ function Boxes() {
             <div className="cont-serv-header">
                 <h2></h2>
             </div>
-            <Row>
-                <Col md={4}>
+            <Row className="h-100">
+                <Col md={4} className="d-flex">
                     <div className="service-box">
                         <div className="service">
                             <img src={pago} alt="Imagen" className="img-fluid" />
@@ -23,7 +23,7 @@ function Boxes() {
                         </div>
                     </div>
                 </Col>
-                <Col md={4}>
+                <Col md={4} className="d-flex">
                     <div className="service-box">
                         <div className="service">
                             <img src={equipo} alt="Imagen" className="img-fluid" />
@@ -33,7 +33,7 @@ function Boxes() {
                         </div>
                     </div>
                 </Col>
-                <Col md={4}>
+                <Col md={4} className="d-flex">
                     <div className="service-box">
                         <div className="service">
                             <img src={comentarios} alt="Imagen" className="img-fluid" />

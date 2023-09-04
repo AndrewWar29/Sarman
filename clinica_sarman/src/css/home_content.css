@@ -55,3 +55,8 @@
   .service img{
     max-width: 40 px;
   }
+
+  .cont-serv{
+    height: 100%;
+    display: flex;
+  }
