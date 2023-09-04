@@ -23,7 +23,21 @@
   }
 
 
+  .card_cont {
+    margin: 10px; /* Adjust the margin to control the spacing */
+    border-radius: 50px; /* Adjust the border-radius value as needed */
+    overflow: hidden; /* Ensure all card corners are rounded */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s;
+  }
   
-  /* Additional CSS for your existing styles */
-  /* ... */
+  .card_cont:hover {
+      transform: scale(1.01); /* Scale up the card on hover */
+  }
   
+  .centered-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    min-height: 100vh;       /* Make the container at least the height of the viewport */
+    padding: 20px;           /* Add spacing from the screen borders */
+  }

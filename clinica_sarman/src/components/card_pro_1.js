@@ -8,7 +8,7 @@ function Card_pro_1() {
   return (
     <div className="centered-container">
     <CardGroup>
-      <Card className="card">
+      <Card className="card_pro">
         <Card.Img variant="top" src={dentista} />
         <Card.Body>
           <Card.Title>Card title</Card.Title>
@@ -21,7 +21,7 @@ function Card_pro_1() {
           <small className="text-muted">Last updated 3 mins ago</small>
         </Card.Footer>
       </Card>
-      <Card className="card">
+      <Card className="card_pro">
         <Card.Img variant="top" src={dentista} />
         <Card.Body>
           <Card.Title>Card title</Card.Title>
@@ -34,7 +34,7 @@ function Card_pro_1() {
           <small className="text-muted">Last updated 3 mins ago</small>
         </Card.Footer>
       </Card>
-      <Card className="card">
+      <Card className="card_pro">
         <Card.Img variant="top" src={dentista} />
         <Card.Body>
           <Card.Title>Card title</Card.Title>
