@@ -26,9 +26,7 @@ function Navigation_bar() {
             <Nav className="me-auto">
                 <Nav.Link href="/"><a className="linkText"  href="/"><AiOutlineHome/> Home</a></Nav.Link>
                 <Nav.Link href="/nosotros"><a className="linkText" href="/nosotros"><AiOutlineInfoCircle/> Nosotros</a></Nav.Link>
-                <Nav.Link href="/profesionales"><a className="linkText" href="/profesionales"><FaUserDoctor/> Profesionales </a></Nav.Link>
                 <Nav.Link href="/servicios"><a className="linkText" href="/servicios"><MdOutlineMedicalServices/> Servicios </a></Nav.Link>
-                <Nav.Link href="/casos_clinicos"><a className="linkText" href="/casos_clinicos"><GiHealthNormal/> Casos clinicos </a></Nav.Link>
                 <Nav.Link href="/consejos"><a className="linkText" href="/consejos"><FaUserDoctor/> Consejos </a></Nav.Link>
                 <Nav.Link href="/contacto"><a className="linkText" href="/contacto"><BsTelephone/> Contacto</a></Nav.Link>
             </Nav>

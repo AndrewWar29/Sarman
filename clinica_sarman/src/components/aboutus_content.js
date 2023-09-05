@@ -1,10 +1,14 @@
 import React from 'react';
 import "../css/aboutus_content.css";
-import foto1 from '../images/banner2.jpg';
 import Card from 'react-bootstrap/Card';
 import CardGroup from 'react-bootstrap/CardGroup';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
+
+import equipo from '../images/equipo.png';
+import kids from '../images/kids.jpg';
+import local from '../images/local.jpg';
+import foto1 from '../images/banner2.jpg';
 
 function AboutCard() {
   return (
@@ -23,7 +27,7 @@ function AboutCard() {
 
     <Row xs={1} md={3} className="g-4">
       <Card className="aboutus-box">
-        <Card.Img variant="top" src={foto1} />
+        <Card.Img variant="top" src={equipo} />
         <Card.Body>
           <Card.Text className="card-text1">
             Contamos con 5 excelentes profesionales y especialistas
@@ -32,7 +36,7 @@ function AboutCard() {
       </Card>
 
       <Card className="aboutus-box">
-        <Card.Img variant="top" src={foto1} />
+        <Card.Img variant="top" src={local} />
         <Card.Body>
           <Card.Text className="card-text1">
           11 especialidades en nuestro centro
@@ -41,7 +45,7 @@ function AboutCard() {
       </Card>
 
       <Card className="aboutus-box">
-        <Card.Img variant="top" src={foto1} />
+        <Card.Img variant="top" src={kids} />
         <Card.Body>
           <Card.Text className="card-text1">
           Atención personalizada para niños y adultos
