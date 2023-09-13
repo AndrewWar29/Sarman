@@ -1,0 +1,28 @@
+.tips-container {
+    text-align: left;
+    margin-top: 20px;
+  }
+  
+.tips-content { 
+    padding: 10px;
+    margin-top: 10px;
+  }
+  
+ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+li {
+    margin-bottom: 10px;
+  }
+
+button{
+    background-color: #007bff; /* Color celeste */
+    color: white;
+    border: none;
+    padding: 15px 30px; /* Aumenta el tamaño del botón */
+    cursor: pointer;
+    font-size: 16px; /* Tamaño de fuente */
+    border-radius: 8px; /* Establece el borde circular */
+  }

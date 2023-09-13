@@ -4,6 +4,7 @@ import { Navigation_bar} from "../components/navbar";
 import { Carrusel} from "../components/carrusel";
 import { Banner} from "../components/banner";
 import { Footer} from "../components/footer";
+import {Consejos} from "../components/tips"
 import React from "react";
 
 //Home page content
@@ -12,7 +13,7 @@ function Advice() {
       <React.Fragment>
       <Banner/>
       <Navigation_bar/>
-      <h>Aca van a ir consejitos!</h>
+      <Consejos />
       <Footer/>
       </React.Fragment>
     );
