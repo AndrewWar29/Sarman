@@ -1,0 +1,5 @@
+/* Ajusta la altura del carrusel como desees */
+.carousel_serv {
+    height: 60%; /* Cambia el valor a la altura deseada */
+    margin-bottom: 20px; /* Ajusta el margen inferior según sea necesario */
+  }

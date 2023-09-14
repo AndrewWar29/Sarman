@@ -9,6 +9,7 @@
 .cont-serv {
   padding: 20px;
   background-color: #f7f7f7;
+   /* Ajusta el margen inferior según sea necesario */
 }
 
 /* Estilos para el encabezado */
@@ -55,3 +56,4 @@
 .service img{
   max-width: 500px;
 }
+
