@@ -1,7 +1,7 @@
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import{ Blanqueamiento_dental, Restauraciones_dentales, Coronas_dentales, Pediatria, Tratamiento_de_conducto, Radiografia,
-  Extracciones, Protesis, Limpiezas_dentales, Periodoncia, Bichectomia } from "../components/new_service_1";
+  Extracciones, Protesis, Limpiezas_dentales, Periodoncia, Bichectomia, Toxina_botulinica} from "../components/new_service_1";
 
 function Service_wrapper_1() {
         return (
@@ -58,6 +58,7 @@ function Service_wrapper_4() {
         <Bichectomia/>
       </Col>
       <Col>
+      <Toxina_botulinica/>
       </Col>
     </Row>
   );

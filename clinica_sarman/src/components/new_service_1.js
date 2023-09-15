@@ -1,6 +1,18 @@
 import React from 'react';
 import { MDBCol, MDBContainer, MDBRow, MDBCard, MDBCardText, MDBCardBody, MDBCardImage, MDBBtn, MDBTypography } from 'mdb-react-ui-kit';
 import foto_1 from '../images/dentista.jpg';
+import blanqueamiento from '../images/blanqueamiento.jpg';
+import limpieza_dentales from '../images/limpieza_dental.jpg';
+import restauracion from '../images/restauracion.png';
+import bichetomia from '../images/bichetomia.png';
+import radiografia from '../images/radiografia.jpg';
+import pediatria from '../images/pediatria.png';
+import corona from '../images/corona.png';
+import conducto from '../images/conducto.png';
+import protesis from '../images/protesis.png';
+import periodoncia from '../images/periodoncia.png';
+import extraccion from '../images/extraccion.jpg';
+import toxina from '../images/toxina.png';
 import '../css/new_service.css';
 
 
@@ -29,7 +41,7 @@ function Blanqueamiento_dental() {
               </div>
               
               {/* Display a single large photo */}
-              <MDBCardImage src={foto_1} alt="Large image" className="w-100 rounded-3" />
+              <MDBCardImage src={blanqueamiento} alt="Large image" className="w-100 rounded-3" />
             </MDBCardBody>
           </MDBCard>
         </MDBCol>
@@ -63,7 +75,7 @@ function Restauraciones_dentales() {
               </div>
               
               {/* Display a single large photo */}
-              <MDBCardImage src={foto_1} alt="Large image" className="w-100 rounded-3" />
+              <MDBCardImage src={restauracion} alt="Large image" className="w-100 rounded-3" />
             </MDBCardBody>
           </MDBCard>
         </MDBCol>
@@ -97,7 +109,7 @@ function Coronas_dentales() {
               </div>
               
               {/* Display a single large photo */}
-              <MDBCardImage src={foto_1} alt="Large image" className="w-100 rounded-3" />
+              <MDBCardImage src={corona} alt="Large image" className="w-100 rounded-3" />
             </MDBCardBody>
           </MDBCard>
         </MDBCol>
@@ -114,7 +126,7 @@ function Pediatria() {
           <MDBCard className="card-container">
             <div className="rounded-top text-white d-flex flex-row justify-content-center align-items-center" style={{ backgroundColor: '#0281c9', height: '200px' }}>
               <div className="text-center">
-                <MDBTypography tag="h5" style={{ fontSize: '30px' }}>PediatrÍa</MDBTypography>
+                <MDBTypography tag="h5" style={{ fontSize: '30px' }}>Pediatría</MDBTypography>
                 <MDBCardText style={{ fontSize: '20px' }}>Estético</MDBCardText>
               </div>
             </div>
@@ -123,13 +135,14 @@ function Pediatria() {
               <div className="mb-5">
                 <div className="p-4" style={{ backgroundColor: '#f8f9fa' }}>
                   <MDBCardText  tag="h2" style={{ fontSize: '20px', textAlign: "justify",  height: '100px', overflow: 'hidden'}}>
-                  a
+                  Es una rama de la odontología que se especializa en la atención dental de niños y adolescentes desde la infancia hasta la adolescencia.
+                   Los odontólogos pediátricos se dedican a proporcionar cuidados dentales específicamente adaptados a las necesidades y etapas de desarrollo de los pacientes jóvenes
                   </MDBCardText>
                 </div>
               </div>
               
               {/* Display a single large photo */}
-              <MDBCardImage src={foto_1} alt="Large image" className="w-100 rounded-3" />
+              <MDBCardImage src={pediatria} alt="Large image" className="w-100 rounded-3" />
             </MDBCardBody>
           </MDBCard>
         </MDBCol>
@@ -163,7 +176,7 @@ function Tratamiento_de_conducto() {
               </div>
               
               {/* Display a single large photo */}
-              <MDBCardImage src={foto_1} alt="Large image" className="w-100 rounded-3" />
+              <MDBCardImage src={conducto} alt="Large image" className="w-100 rounded-3" />
             </MDBCardBody>
           </MDBCard>
         </MDBCol>
@@ -189,13 +202,14 @@ function Radiografia() {
               <div className="mb-5">
                 <div className="p-4" style={{ backgroundColor: '#f8f9fa' }}>
                   <MDBCardText  tag="h2" style={{ fontSize: '20px', textAlign: "justify",  height: '100px', overflow: 'hidden' }}>
-                  a.
+                  Es una imagen médica que se utiliza en odontología para diagnosticar y evaluar la salud bucal de un paciente. Son una herramienta valiosa, 
+                  ya que proporcionan información detallada sobre los dientes, las encías, las raíces dentales y las estructuras óseas circundantes.
                   </MDBCardText>
                 </div>
               </div>
               
               {/* Display a single large photo */}
-              <MDBCardImage src={foto_1} alt="Large image" className="w-100 rounded-3" />
+              <MDBCardImage src={radiografia} alt="Large image" className="w-100 rounded-3" />
             </MDBCardBody>
           </MDBCard>
         </MDBCol>
@@ -212,7 +226,7 @@ function Extracciones() {
           <MDBCard className="card-container">
             <div className="rounded-top text-white d-flex flex-row justify-content-center align-items-center" style={{ backgroundColor: '#0281c9', height: '200px' }}>
               <div className="text-center">
-                <MDBTypography tag="h5" style={{ fontSize: '30px' }}>Radiografía</MDBTypography>
+                <MDBTypography tag="h5" style={{ fontSize: '30px' }}>Extracciones</MDBTypography>
                 <MDBCardText style={{ fontSize: '20px' }}>Estético</MDBCardText>
               </div>
             </div>
@@ -229,7 +243,7 @@ function Extracciones() {
               </div>
               
               {/* Display a single large photo */}
-              <MDBCardImage src={foto_1} alt="Large image" className="w-100 rounded-3" />
+              <MDBCardImage src={extraccion} alt="Large image" className="w-100 rounded-3" />
             </MDBCardBody>
           </MDBCard>
         </MDBCol>
@@ -263,7 +277,7 @@ function Protesis() {
               </div>
               
               {/* Display a single large photo */}
-              <MDBCardImage src={foto_1} alt="Large image" className="w-100 rounded-3" />
+              <MDBCardImage src={protesis} alt="Large image" className="w-100 rounded-3" />
             </MDBCardBody>
           </MDBCard>
         </MDBCol>
@@ -298,7 +312,7 @@ function Limpiezas_dentales() {
               </div>
               
               {/* Display a single large photo */}
-              <MDBCardImage src={foto_1} alt="Large image" className="w-100 rounded-3" />
+              <MDBCardImage src={limpieza_dentales} alt="Large image" className="w-100 rounded-3" />
             </MDBCardBody>
           </MDBCard>
         </MDBCol>
@@ -331,7 +345,7 @@ function Periodoncia() {
               </div>
               
               {/* Display a single large photo */}
-              <MDBCardImage src={foto_1} alt="Large image" className="w-100 rounded-3" />
+              <MDBCardImage src={periodoncia} alt="Large image" className="w-100 rounded-3" />
             </MDBCardBody>
           </MDBCard>
         </MDBCol>
@@ -365,7 +379,40 @@ function Bichectomia() {
               </div>
               
               {/* Display a single large photo */}
-              <MDBCardImage src={foto_1} alt="Large image" className="w-100 rounded-3" />
+              <MDBCardImage src={bichetomia} alt="Large image" className="w-100 rounded-3" />
+            </MDBCardBody>
+          </MDBCard>
+        </MDBCol>
+      </MDBRow>
+    </MDBContainer>
+  );
+}
+
+function Toxina_botulinica() {
+  return (
+    <MDBContainer className="py-5 h-100">
+      <MDBRow className="justify-content-center align-items-center h-100">
+        <MDBCol lg="10" xl="10">
+          <MDBCard className="card-container">
+            <div className="rounded-top text-white d-flex flex-row justify-content-center align-items-center" style={{ backgroundColor: '#0281c9', height: '200px' }}>
+              <div className="text-center">
+                <MDBTypography tag="h5" style={{ fontSize: '30px' }}>Toxina Botulínica</MDBTypography>
+                <MDBCardText style={{ fontSize: '20px' }}>Estético</MDBCardText>
+              </div>
+            </div>
+          
+            <MDBCardBody className="text-black p-4">
+              <div className="mb-5">
+                <div className="p-4" style={{ backgroundColor: '#f8f9fa' }}>
+                  <MDBCardText  tag="h2" style={{ fontSize: '20px', textAlign: "justify",  height: '100px', overflow: 'hidden' }}>
+                  Se utiliza en medicina y en procedimientos estéticos para tratar una variedad de afecciones y trastornos, así como para reducir
+                   temporalmente la apariencia de las arrugas faciales. Los productos comerciales más conocidos que contienen toxina botulínica incluyen Botox, Dysport y Xeomin
+                  </MDBCardText>
+                </div>
+              </div>
+              
+              {/* Display a single large photo */}
+              <MDBCardImage src={toxina} alt="Large image" className="w-100 rounded-3" />
             </MDBCardBody>
           </MDBCard>
         </MDBCol>
@@ -376,4 +423,4 @@ function Bichectomia() {
 
 
 export { Blanqueamiento_dental, Restauraciones_dentales, Coronas_dentales, Pediatria, Tratamiento_de_conducto, Radiografia,
-   Extracciones, Protesis, Limpiezas_dentales, Periodoncia, Bichectomia };
+   Extracciones, Protesis, Limpiezas_dentales, Periodoncia, Bichectomia, Toxina_botulinica};
