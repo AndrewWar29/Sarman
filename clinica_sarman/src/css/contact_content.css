@@ -50,3 +50,7 @@
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
+.form-group-spacing {
+  margin-bottom: 10px; /* Puedes ajustar el valor según tus preferencias */
+}

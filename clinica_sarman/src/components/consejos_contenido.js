@@ -14,6 +14,15 @@ import water from "../images/water.jpg";
 import emergencia from "../images/emergencia.jpg";
 import sangrado from "../images/sangrado.jpg";
 import roto from "../images/roto.jpg";
+import cons_1 from "../images/cons_1.png";
+import cons_2 from "../images/cons_2.png";
+import cons_3 from "../images/cons_3.png";
+import cons_4 from "../images/cons_1.png";
+import cons_5 from "../images/cons_2.png";
+import cons_6 from "../images/cons_3.png";
+import cons_7 from "../images/cons_1.png";
+import cons_8 from "../images/cons_2.png";
+import cons_9 from "../images/cons_3.png";
 import '../css/new_service.css';
 
 
@@ -22,7 +31,7 @@ function Cepillado_dientes() {
     <MDBContainer className="py-5 h-100">
       <MDBRow className="justify-content-center align-items-center h-100">
         <MDBCol lg="10" xl="10">
-          <MDBCard className="card-container">
+          <MDBCard className="card-container h-100">
             <div className="rounded-top text-white d-flex flex-row justify-content-center align-items-center" style={{ backgroundColor: '#0281c9', height: '200px' }}>
               <div className="text-center">
                 <MDBTypography tag="h5" style={{ fontSize: '30px' }}>1. Cepíllate los dientes al menos dos veces al día: </MDBTypography>
@@ -32,11 +41,7 @@ function Cepillado_dientes() {
             <MDBCardBody className="text-black p-4">
               <div className="mb-5">
                 <div className="p-4" style={{ backgroundColor: '#f8f9fa' }}>
-                  <MDBCardText  tag="h2" style={{ fontSize: '20px', textAlign: "justify",  height: '100px', overflow: 'hidden' }}>
-                  Para mantener una buena higiene bucal, cepíllate los dientes dos veces al día con un cepillo de cerdas 
-                  suaves y pasta dental con flúor. Asegúrate de cepillar todas las superficies de tus dientes para prevenir
-                   caries y problemas de encías.
-                  </MDBCardText>
+                <MDBCardImage src={cons_1} alt="Large image" className="w-100 rounded-3" />
                 </div>
               </div>
               
@@ -55,7 +60,7 @@ function Hilo_dental() {
       <MDBContainer className="py-5 h-100">
         <MDBRow className="justify-content-center align-items-center h-100">
           <MDBCol lg="10" xl="10">
-            <MDBCard className="card-container">
+            <MDBCard className="card-container h-100">
               <div className="rounded-top text-white d-flex flex-row justify-content-center align-items-center" style={{ backgroundColor: '#0281c9', height: '200px' }}>
                 <div className="text-center">
                   <MDBTypography tag="h5" style={{ fontSize: '30px' }}>2.Utiliza hilo dental diariamente para limpiar entre los dientes: </MDBTypography>
@@ -65,11 +70,7 @@ function Hilo_dental() {
               <MDBCardBody className="text-black p-4">
                 <div className="mb-5">
                   <div className="p-4" style={{ backgroundColor: '#f8f9fa' }}>
-                    <MDBCardText  tag="h2" style={{ fontSize: '20px', textAlign: "justify",  height: '100px', overflow: 'hidden' }}>
-                    El uso diario de hilo dental es esencial para eliminar 
-                    restos de alimentos y placa bacteriana que se acumulan entre los dientes y a lo largo de las encías, reduciendo el riesgo de caries
-                     interdentales y enfermedades de las encías.
-                    </MDBCardText>
+                  <MDBCardImage src={cons_2} alt="Large image" className="w-100 rounded-3" />
                   </div>
                 </div>
                 
@@ -88,7 +89,7 @@ function Hilo_dental() {
       <MDBContainer className="py-5 h-100">
         <MDBRow className="justify-content-center align-items-center h-100">
           <MDBCol lg="10" xl="10">
-            <MDBCard className="card-container">
+            <MDBCard className="card-container h-100">
               <div className="rounded-top text-white d-flex flex-row justify-content-center align-items-center" style={{ backgroundColor: '#0281c9', height: '200px' }}>
                 <div className="text-center">
                   <MDBTypography tag="h5" style={{ fontSize: '30px' }}>3.Enjuaga con enjuague bucal después del cepillado: </MDBTypography>
@@ -98,11 +99,7 @@ function Hilo_dental() {
               <MDBCardBody className="text-black p-4">
                 <div className="mb-5">
                   <div className="p-4" style={{ backgroundColor: '#f8f9fa' }}>
-                    <MDBCardText  tag="h2" style={{ fontSize: '20px', textAlign: "justify",  height: '100px', overflow: 'hidden' }}>
-                    Complementa tu rutina de cuidado bucal con un enjuague bucal adecuado después del cepillado y el uso del hilo dental. 
-                    Busca uno con flúor para fortalecer el esmalte dental y ayudar a mantener un aliento fresco, aunque recuerda que
-                     el enjuague no debe reemplazar el cepillado y el uso del hilo dental.
-                    </MDBCardText>
+                  <MDBCardImage src={cons_3} alt="Large image" className="w-100 rounded-3" />
                   </div>
                 </div>
                 
@@ -116,12 +113,14 @@ function Hilo_dental() {
     );
   }
 
+  
+
   function Buen_cepillo() {
     return (
 <MDBContainer className="py-5 h-100">
       <MDBRow className="justify-content-center align-items-center h-100">
         <MDBCol lg="10" xl="10">
-          <MDBCard className="card-container">
+          <MDBCard className="card-container h-100">
             <div className="rounded-top text-white d-flex flex-row justify-content-center align-items-center" style={{ backgroundColor: '#0281c9', height: '200px' }}>
               <div className="text-center">
                 <MDBTypography tag="h5" style={{ fontSize: '30px' }}>1. Características de un buen cepillo: </MDBTypography>
@@ -149,7 +148,7 @@ function Hilo_dental() {
 <MDBContainer className="py-5 h-100">
       <MDBRow className="justify-content-center align-items-center h-100">
         <MDBCol lg="10" xl="10">
-          <MDBCard className="card-container">
+          <MDBCard className="card-container h-100">
             <div className="rounded-top text-white d-flex flex-row justify-content-center align-items-center" style={{ backgroundColor: '#0281c9', height: '200px' }}>
               <div className="text-center">
                 <MDBTypography tag="h5" style={{ fontSize: '30px' }}>2. ¿Te sabes cepillar los dientes?: </MDBTypography>
@@ -177,7 +176,7 @@ function Hilo_dental() {
 <MDBContainer className="py-5 h-100">
       <MDBRow className="justify-content-center align-items-center h-100">
         <MDBCol lg="10" xl="10">
-          <MDBCard className="card-container">
+          <MDBCard className="card-container h-100">
             <div className="rounded-top text-white d-flex flex-row justify-content-center align-items-center" style={{ backgroundColor: '#0281c9', height: '200px' }}>
               <div className="text-center">
                 <MDBTypography tag="h5" style={{ fontSize: '30px' }}>3. Cuidado cepillo: </MDBTypography>
@@ -205,7 +204,7 @@ function Hilo_dental() {
         <MDBContainer className="py-5 h-100">
         <MDBRow className="justify-content-center align-items-center h-100">
           <MDBCol lg="10" xl="10">
-            <MDBCard className="card-container">
+            <MDBCard className="card-container h-100">
               <div className="rounded-top text-white d-flex flex-row justify-content-center align-items-center" style={{ backgroundColor: '#0281c9', height: '200px' }}>
                 <div className="text-center">
                   <MDBTypography tag="h5" style={{ fontSize: '30px' }}>1.Limita el consumo de azúcares y alimentos procesados: </MDBTypography>
@@ -215,11 +214,7 @@ function Hilo_dental() {
               <MDBCardBody className="text-black p-4">
                 <div className="mb-5">
                   <div className="p-4" style={{ backgroundColor: '#f8f9fa' }}>
-                    <MDBCardText  tag="h2" style={{ fontSize: '20px', textAlign: "justify",  height: '100px', overflow: 'hidden' }}>
-                    Reducir la ingesta de azúcares y alimentos altamente procesados es fundamental para prevenir la formación de caries dentales. Los azúcares alimentan
-                     las bacterias en la boca que producen ácidos que dañan el esmalte dental. Opta por alimentos bajos en azúcares y elige opciones naturales, como frutas y verduras, en lugar de productos altamente 
-                     procesados y azucarados.
-                    </MDBCardText>
+                  <MDBCardImage src={cons_4} alt="Large image" className="w-100 rounded-3" />
                   </div>
                 </div>
                 
@@ -238,7 +233,7 @@ function Hilo_dental() {
         <MDBContainer className="py-5 h-100">
         <MDBRow className="justify-content-center align-items-center h-100">
           <MDBCol lg="10" xl="10">
-            <MDBCard className="card-container">
+            <MDBCard className="card-container h-100">
               <div className="rounded-top text-white d-flex flex-row justify-content-center align-items-center" style={{ backgroundColor: '#0281c9', height: '200px' }}>
                 <div className="text-center">
                   <MDBTypography tag="h5" style={{ fontSize: '30px' }}>2. Aumenta el consumo de alimentos ricos en calcio: </MDBTypography>
@@ -248,10 +243,7 @@ function Hilo_dental() {
               <MDBCardBody className="text-black p-4">
                 <div className="mb-5">
                   <div className="p-4" style={{ backgroundColor: '#f8f9fa' }}>
-                    <MDBCardText  tag="h2" style={{ fontSize: '20px', textAlign: "justify",  height: '100px', overflow: 'hidden' }}>
-                    El calcio es esencial para mantener dientes y encías fuertes. Incorpora alimentos ricos en calcio en tu dieta,
-                     como productos lácteos bajos en grasa, verduras de hojas verdes, almendras y pescado enlatado con huesos comestibles, como el salmón y las sardinas.
-                    </MDBCardText>
+                  <MDBCardImage src={cons_5} alt="Large image" className="w-100 rounded-3" />
                   </div>
                 </div>
                 
@@ -270,7 +262,7 @@ function Hilo_dental() {
         <MDBContainer className="py-5 h-100">
         <MDBRow className="justify-content-center align-items-center h-100">
           <MDBCol lg="10" xl="10">
-            <MDBCard className="card-container">
+            <MDBCard className="card-container h-100">
               <div className="rounded-top text-white d-flex flex-row justify-content-center align-items-center" style={{ backgroundColor: '#0281c9', height: '200px' }}>
                 <div className="text-center">
                   <MDBTypography tag="h5" style={{ fontSize: '30px' }}>3. Bebe agua y limita las bebidas azucaradas: </MDBTypography>
@@ -280,11 +272,7 @@ function Hilo_dental() {
               <MDBCardBody className="text-black p-4">
                 <div className="mb-5">
                   <div className="p-4" style={{ backgroundColor: '#f8f9fa' }}>
-                    <MDBCardText  tag="h2" style={{ fontSize: '20px', textAlign: "justify",  height: '100px', overflow: 'hidden' }}>
-                    El agua es la mejor bebida para tu salud dental. Ayuda a mantener la boca hidratada y enjuaga los restos de comida y ácidos dañinos. Evita 
-                    las bebidas azucaradas, como refrescos y jugos de frutas, ya que pueden contribuir a la formación de caries. Si consumes bebidas azucaradas ocasionalmente,
-                     utiliza una pajita para reducir el contacto con tus dientes.
-                    </MDBCardText>
+                  <MDBCardImage src={cons_6} alt="Large image" className="w-100 rounded-3" />
                   </div>
                 </div>
                 
@@ -303,7 +291,7 @@ function Hilo_dental() {
         <MDBContainer className="py-5 h-100">
         <MDBRow className="justify-content-center align-items-center h-100">
           <MDBCol lg="10" xl="10">
-            <MDBCard className="card-container">
+            <MDBCard className="card-container h-100">
               <div className="rounded-top text-white d-flex flex-row justify-content-center align-items-center" style={{ backgroundColor: '#0281c9', height: '200px' }}>
                 <div className="text-center">
                   <MDBTypography tag="h5" style={{ fontSize: '30px' }}>1. Contacta a un dentista de emergencia de inmediato: </MDBTypography>
@@ -313,11 +301,7 @@ function Hilo_dental() {
               <MDBCardBody className="text-black p-4">
                 <div className="mb-5">
                   <div className="p-4" style={{ backgroundColor: '#f8f9fa' }}>
-                    <MDBCardText  tag="h2" style={{ fontSize: '20px', textAlign: "justify",  height: '100px', overflow: 'hidden' }}>
-                    Si experimentas una emergencia dental, como un diente roto, una lesión en la boca o un dolor intenso, es fundamental comunicarte con un dentista de emergencia
-                     lo antes posible. Busca atención dental urgente para evaluar y tratar adecuadamente el problema. Los dentistas de emergencia están preparados para manejar situaciones
-                      críticas y proporcionar el tratamiento necesario.
-                    </MDBCardText>
+                  <MDBCardImage src={cons_7} alt="Large image" className="w-100 rounded-3" />
                   </div>
                 </div>
                 
@@ -336,7 +320,7 @@ function Hilo_dental() {
         <MDBContainer className="py-5 h-100">
         <MDBRow className="justify-content-center align-items-center h-100">
           <MDBCol lg="10" xl="10">
-            <MDBCard className="card-container">
+            <MDBCard className="card-container h-100">
               <div className="rounded-top text-white d-flex flex-row justify-content-center align-items-center" style={{ backgroundColor: '#0281c9', height: '200px' }}>
                 <div className="text-center">
                   <MDBTypography tag="h5" style={{ fontSize: '30px' }}>2. Mantén la calma y controla el sangrado: </MDBTypography>
@@ -346,11 +330,7 @@ function Hilo_dental() {
               <MDBCardBody className="text-black p-4">
                 <div className="mb-5">
                   <div className="p-4" style={{ backgroundColor: '#f8f9fa' }}>
-                    <MDBCardText  tag="h2" style={{ fontSize: '20px', textAlign: "justify",  height: '100px', overflow: 'hidden' }}>
-                    En caso de un traumatismo dental que cause sangrado, intenta mantener la calma. Enjuaga suavemente la boca con agua tibia para eliminar la sangre 
-                    y evaluar la lesión. Si el sangrado es intenso y no se detiene después de unos minutos de presión con una gasa estéril o un pañuelo limpio, busca 
-                    ayuda médica de emergencia o un dentista de inmediato.
-                    </MDBCardText>
+                  <MDBCardImage src={cons_8} alt="Large image" className="w-100 rounded-3" />
                   </div>
                 </div>
                 
@@ -370,7 +350,7 @@ function Hilo_dental() {
         <MDBContainer className="py-5 h-100">
         <MDBRow className="justify-content-center align-items-center h-100">
           <MDBCol lg="10" xl="10">
-            <MDBCard className="card-container">
+            <MDBCard className="card-container h-100">
               <div className="rounded-top text-white d-flex flex-row justify-content-center align-items-center" style={{ backgroundColor: '#0281c9', height: '200px' }}>
                 <div className="text-center">
                   <MDBTypography tag="h5" style={{ fontSize: '30px' }}>3. Preserva cualquier pieza dental perdida o dañada: </MDBTypography>
@@ -380,11 +360,7 @@ function Hilo_dental() {
               <MDBCardBody className="text-black p-4">
                 <div className="mb-5">
                   <div className="p-4" style={{ backgroundColor: '#f8f9fa' }}>
-                    <MDBCardText  tag="h2" style={{ fontSize: '20px', textAlign: "justify",  height: '100px', overflow: 'hidden' }}>
-                    Si has perdido un diente o tienes una pieza dental rota, intenta preservarla. Lava la pieza dental con agua tibia y, si es posible,
-                     intenta colocarla nuevamente en su lugar con cuidado. Si no puedes hacerlo, coloca la pieza dental en un recipiente con leche o saliva,
-                      y lleva todo el material dental dañado contigo al dentista de emergencia. Cuanto más rápido tomes medidas, mayores serán las posibilidades de salvar el diente.
-                    </MDBCardText>
+                  <MDBCardImage src={cons_9} alt="Large image" className="w-100 rounded-3" />
                   </div>
                 </div>
                 

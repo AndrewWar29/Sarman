@@ -4,7 +4,6 @@ import Card from 'react-bootstrap/Card';
 import CardGroup from 'react-bootstrap/CardGroup';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
-
 import equipo from '../images/equipo.png';
 import kids from '../images/kids.jpg';
 import local from '../images/local.jpg';

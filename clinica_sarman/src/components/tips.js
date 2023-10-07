@@ -3,14 +3,13 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
 import "../css/tips.css";
+import { FaUserDoctor } from "react-icons/fa6";
 import { Cepillado_dientes, Hilo_dental, Enjuague_bucal, Buen_cepillo, Tecnica_cepillo, Cuidado_cepillo, Azucar, Calcio, Bebidas, Emergencia, Sangrado, Roto } from "../components/consejos_contenido";
-import Dientes from "../images/banner2.jpg";
-import Urgencia from "../videos/Video.mp4";
 
 const categoryContent = {
   'Cuidado dental': (
     <div>
-      <Row xs={1} md={3} className="g-1">
+      <Row xs={1} md={2} lg={3} className="g-4">
         <Col>
           <Cepillado_dientes />
         </Col>
@@ -25,7 +24,7 @@ const categoryContent = {
   ),
   'Cepillado': (
     <div>
-      <Row xs={1} md={3} className="g-1">
+      <Row xs={1} md={2} lg={3} className="g-4">
         <Col>
           <Buen_cepillo />
         </Col>
@@ -40,7 +39,7 @@ const categoryContent = {
   ),
   'Alimentación': (
     <div>
-      <Row xs={1} md={3} className="g-1">
+      <Row xs={1} md={2} lg={3} className="g-4">
         <Col>
           <Azucar />
         </Col>
@@ -55,7 +54,7 @@ const categoryContent = {
   ),
   'Emergencias dentales': (
     <div>
-      <Row xs={1} md={3} className="g-1">
+       <Row xs={1} md={2} lg={3} className="g-4">
         <Col>
           <Emergencia />
         </Col>
@@ -86,13 +85,17 @@ const dentalTipsData = [
 ];
 
 function Consejos() {
-  const [selectedCategory, setSelectedCategory] = useState(null);
+  const [selectedCategory, setSelectedCategory] = useState(
+    dentalTipsData[0].category // Inicializa con el primer elemento
+  );
 
   const selectCategory = (category) => {
-    // Toggle the selection if the same category is clicked again
-    setSelectedCategory((prevCategory) =>
-      prevCategory === category ? null : category
-    );
+    // Evita que se cierre el elemento seleccionado actualmente
+    if (selectedCategory === category) {
+      return;
+    }
+
+    setSelectedCategory(category);
   };
 
   return (
@@ -100,8 +103,8 @@ function Consejos() {
       <div>
         <Card>
           <Card.Body className="aboutus-card1">
-            <Card.Text className="aboutus-text1">Consejos</Card.Text>
-            <Card.Text className="aboutus-text2">
+            <Card.Text className="aboutus-text1 text-center">Consejos</Card.Text>
+            <Card.Text className="aboutus-text2 text-center">
               Selecciona el botón que corresponde al tipo de consejo que deseas recibir.
             </Card.Text>
           </Card.Body>
@@ -110,17 +113,14 @@ function Consejos() {
           {dentalTipsData.map((categoryData, index) => (
             <li key={index}>
               <button onClick={() => selectCategory(categoryData.category)}>
-                {/* Remove the title below the buttons */}
                 {categoryData.category}
               </button>
             </li>
           ))}
         </ul>
-        {selectedCategory && (
-          <div className="selected-category">
-            {categoryContent[selectedCategory]}
-          </div>
-        )}
+        <div className="selected-category">
+          {categoryContent[selectedCategory]}
+        </div>
       </div>
     </div>
   );

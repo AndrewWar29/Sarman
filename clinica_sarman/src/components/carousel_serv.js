@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import '../css/carousel_serv.css';
-import { Blanqueamiento_dental } from '../components/new_service_1';
 import { Service_wrapper_1, Service_wrapper_2, Service_wrapper_3, Service_wrapper_4} from '../components/service_wrapper';
 
 function Carousel_serv() {

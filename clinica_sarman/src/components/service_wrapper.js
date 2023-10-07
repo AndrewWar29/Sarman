@@ -5,7 +5,7 @@ import{ Blanqueamiento_dental, Restauraciones_dentales, Coronas_dentales, Pediat
 
 function Service_wrapper_1() {
         return (
-          <Row xs={1} md={3} className="g-1"> {/* Use 'md={3}' to show 3 columns on medium screens */}
+          <Row xs={1} md={2} lg={3} className="g-4">
             <Col>
               <Blanqueamiento_dental/>
             </Col>
@@ -20,7 +20,7 @@ function Service_wrapper_1() {
 }
 function Service_wrapper_2() {
   return (
-    <Row xs={1} md={3} className="g-1"> {/* Use 'md={3}' to show 3 columns on medium screens */}
+    <Row xs={1} md={2} lg={3} className="g-4">
       <Col>
         <Pediatria/>
       </Col>
@@ -35,7 +35,7 @@ function Service_wrapper_2() {
 }
 function Service_wrapper_3() {
   return (
-    <Row xs={1} md={3} className="g-1"> {/* Use 'md={3}' to show 3 columns on medium screens */}
+    <Row xs={1} md={2} lg={3} className="g-4">
       <Col>
         <Extracciones/>
       </Col>
@@ -50,7 +50,7 @@ function Service_wrapper_3() {
 }
 function Service_wrapper_4() {
   return (
-    <Row xs={1} md={3} className="g-1"> {/* Use 'md={3}' to show 3 columns on medium screens */}
+    <Row xs={1} md={2} lg={3} className="g-4">
       <Col>
         <Periodoncia/>
       </Col>

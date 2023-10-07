@@ -10,21 +10,27 @@ import { Carousel_serv } from "./carousel_serv";
 function ContServ() {
 
   return (
+
+    <div>
+    <div>
+      <Card>
+    <Card.Body className="aboutus-card1">
+      <Card.Text className="aboutus-text1 text-center">
+      Servicios dentales
+      </Card.Text>
+      <Card.Text className="aboutus-text2 text-center">
+        Aquí una descripción y casos clínicos de los servicios que ofrece nuestra clínica.
+      </Card.Text>
+    </Card.Body>
+  </Card>
+
+    
     <div className="cont-serv">
-        <Card>
-          <Card.Body className="aboutus-card1">
-            <Card.Text className="aboutus-text1"> <MdOutlineMedicalServices className="cont-serv-icon" /> Servicios dentales</Card.Text>
-            <Card.Text className="aboutus-text2">
-              Aqui una descripción y casos clinicos de los servicios que ofrece nuestra clinica.
-            </Card.Text>
-          </Card.Body>
-        </Card>
 
       <Carousel_serv></Carousel_serv> 
-     
-    
-        
  
+    </div>
+    </div>
     </div>
   )
 }

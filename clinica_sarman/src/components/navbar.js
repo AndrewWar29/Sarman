@@ -7,7 +7,8 @@ import { AiOutlineHome } from "react-icons/ai";
 import { AiOutlineInfoCircle} from "react-icons/ai";
 import { FaUserDoctor } from "react-icons/fa6";
 import { MdOutlineMedicalServices } from "react-icons/md";
-import { BsTelephone } from "react-icons/bs";
+import { AiOutlineBulb } from "react-icons/ai";
+import { TiContacts } from "react-icons/ti";
 import { GiHealthNormal } from "react-icons/gi";
 
 
@@ -27,8 +28,8 @@ function Navigation_bar() {
                 <Nav.Link href="/"><a className="linkText"  href="/"><AiOutlineHome/> Home</a></Nav.Link>
                 <Nav.Link href="/nosotros"><a className="linkText" href="/nosotros"><AiOutlineInfoCircle/> Nosotros</a></Nav.Link>
                 <Nav.Link href="/servicios"><a className="linkText" href="/servicios"><MdOutlineMedicalServices/> Servicios </a></Nav.Link>
-                <Nav.Link href="/consejos"><a className="linkText" href="/consejos"><FaUserDoctor/> Consejos </a></Nav.Link>
-                <Nav.Link href="/contacto"><a className="linkText" href="/contacto"><BsTelephone/> Contacto</a></Nav.Link>
+                <Nav.Link href="/consejos"><a className="linkText" href="/consejos"><AiOutlineBulb/> Consejos </a></Nav.Link>
+                <Nav.Link href="/contacto"><a className="linkText" href="/contacto"><TiContacts/> Contacto</a></Nav.Link>
             </Nav>
             </Navbar.Collapse>
             </Nav>

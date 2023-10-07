@@ -13,7 +13,25 @@ import protesis from '../images/protesis.png';
 import periodoncia from '../images/periodoncia.png';
 import extraccion from '../images/extraccion.jpg';
 import toxina from '../images/toxina.png';
+import text_blanq from '../images/text_blanq.png';
+import text_rest from '../images/text_rest.png';
+import text_coro from '../images/text_coro.png';
+import text_pedia from '../images/text_pedia.png';
+import text_conduc from '../images/text_conduc.png';
+import text_radio from '../images/text_radio.png';
+import text_extr from '../images/text_extr.png';
+import text_prot from '../images/text_prot.png';
+import text_limp from '../images/text_limp.png';
+import text_biche from '../images/text_biche.png';
+import text_toxi from '../images/text_toxi.png';
+import text_perio from '../images/text_perio.png';
 import '../css/new_service.css';
+
+const cardStyle = {
+  minWidth: '320px', // Ancho mínimo para evitar que los componentes sean demasiado delgados
+  maxWidth: '500px', // Ancho máximo para controlar el tamaño
+  margin: '20px', // Margen entre los componentes (ajusta según tus necesidades)
+};
 
 
 function Blanqueamiento_dental() {
@@ -21,22 +39,18 @@ function Blanqueamiento_dental() {
     <MDBContainer className="py-5 h-100">
       <MDBRow className="justify-content-center align-items-center h-100">
         <MDBCol lg="10" xl="10">
-          <MDBCard className="card-container">
+          <MDBCard className="card-container" style={cardStyle}>
             <div className="rounded-top text-white d-flex flex-row justify-content-center align-items-center" style={{ backgroundColor: '#0281c9', height: '200px' }}>
               <div className="text-center">
                 <MDBTypography tag="h5" style={{ fontSize: '30px' }}>Blanqueamiento dental</MDBTypography>
-                <MDBCardText style={{ fontSize: '20px' }}>Estético</MDBCardText>
+                <MDBCardText style={{ fontSize: '20px' }}></MDBCardText>
               </div>
             </div>
           
             <MDBCardBody className="text-black p-4">
               <div className="mb-5">
                 <div className="p-4" style={{ backgroundColor: '#f8f9fa' }}>
-                  <MDBCardText  tag="h2" style={{ fontSize: '20px', textAlign: "justify",  height: '100px', overflow: 'hidden' }}>
-                    Es un tratamiento estético el cual busca dar un aspecto más blanco a los dientes. 
-                    Para este se aplica un gel el cual reacciona con las zonas más oscuras del diente, 
-                    dando así al diente un color más claro.
-                  </MDBCardText>
+                <MDBCardImage src={text_blanq} alt="Large image" className="w-100 rounded-3" />
                 </div>
               </div>
               
@@ -55,22 +69,18 @@ function Restauraciones_dentales() {
     <MDBContainer className="py-5 h-100">
       <MDBRow className="justify-content-center align-items-center h-100">
         <MDBCol lg="10" xl="10">
-          <MDBCard className="card-container">
+          <MDBCard className="card-container" style={cardStyle}>
             <div className="rounded-top text-white d-flex flex-row justify-content-center align-items-center" style={{ backgroundColor: '#0281c9', height: '200px' }}>
               <div className="text-center">
                 <MDBTypography tag="h5" style={{ fontSize: '30px' }}>Restauraciones dentales</MDBTypography>
-                <MDBCardText style={{ fontSize: '20px' }}>Estético</MDBCardText>
+                <MDBCardText style={{ fontSize: '20px' }}></MDBCardText>
               </div>
             </div>
           
             <MDBCardBody className="text-black p-4">
               <div className="mb-5">
                 <div className="p-4" style={{ backgroundColor: '#f8f9fa' }}>
-                  <MDBCardText  tag="h2" style={{ fontSize: '20px', textAlign: "justify",  height: '100px', overflow: 'hidden' }}>
-                  Es una reconstrucción parcial o total de un diente debido a la destrucción y/o desgaste del diente.
-                 En este tratamiento se intenta recuperar en lo posible la forma original del diente además de su 
-                 funcionalidad mediante la utilización de materiales artificiales.
-                  </MDBCardText>
+                <MDBCardImage src={text_rest} alt="Large image" className="w-100 rounded-3" />
                 </div>
               </div>
               
@@ -89,22 +99,18 @@ function Coronas_dentales() {
     <MDBContainer className="py-5 h-100">
       <MDBRow className="justify-content-center align-items-center h-100">
         <MDBCol lg="10" xl="10">
-          <MDBCard className="card-container">
+          <MDBCard className="card-container" style={cardStyle}>
             <div className="rounded-top text-white d-flex flex-row justify-content-center align-items-center" style={{ backgroundColor: '#0281c9', height: '200px' }}>
               <div className="text-center">
                 <MDBTypography tag="h5" style={{ fontSize: '30px' }}>Coronas dentales</MDBTypography>
-                <MDBCardText style={{ fontSize: '20px' }}>Estético</MDBCardText>
+                <MDBCardText style={{ fontSize: '20px' }}></MDBCardText>
               </div>
             </div>
           
             <MDBCardBody className="text-black p-4">
               <div className="mb-5">
                 <div className="p-4" style={{ backgroundColor: '#f8f9fa' }}>
-                  <MDBCardText  tag="h2" style={{ fontSize: '20px', textAlign: "justify",  height: '100px', overflow: 'hidden' }}>
-                  Es una prótesis dental, la cual se ubica sobre algún diente dañado. Esta busca proteger el diente 
-                al cubrirlo por completo. Imita de una manera exacta al diente original al hacerse a medida del 
-                cliente, por lo que cada corona es única.
-                  </MDBCardText>
+                <MDBCardImage src={text_coro} alt="Large image" className="w-100 rounded-3" />
                 </div>
               </div>
               
@@ -123,21 +129,18 @@ function Pediatria() {
     <MDBContainer className="py-5 h-100">
       <MDBRow className="justify-content-center align-items-center h-100">
         <MDBCol lg="10" xl="10">
-          <MDBCard className="card-container">
+        <MDBCard className="card-container" style={cardStyle}>
             <div className="rounded-top text-white d-flex flex-row justify-content-center align-items-center" style={{ backgroundColor: '#0281c9', height: '200px' }}>
               <div className="text-center">
                 <MDBTypography tag="h5" style={{ fontSize: '30px' }}>Pediatría</MDBTypography>
-                <MDBCardText style={{ fontSize: '20px' }}>Estético</MDBCardText>
+                <MDBCardText style={{ fontSize: '20px' }}></MDBCardText>
               </div>
             </div>
           
             <MDBCardBody className="text-black p-4">
               <div className="mb-5">
                 <div className="p-4" style={{ backgroundColor: '#f8f9fa' }}>
-                  <MDBCardText  tag="h2" style={{ fontSize: '20px', textAlign: "justify",  height: '100px', overflow: 'hidden'}}>
-                  Es una rama de la odontología que se especializa en la atención dental de niños y adolescentes desde la infancia hasta la adolescencia.
-                   Los odontólogos pediátricos se dedican a proporcionar cuidados dentales específicamente adaptados a las necesidades y etapas de desarrollo de los pacientes jóvenes
-                  </MDBCardText>
+                <MDBCardImage src={text_pedia} alt="Large image" className="w-100 rounded-3" />
                 </div>
               </div>
               
@@ -156,22 +159,18 @@ function Tratamiento_de_conducto() {
     <MDBContainer className="py-5 h-100">
       <MDBRow className="justify-content-center align-items-center h-100">
         <MDBCol lg="10" xl="10">
-          <MDBCard className="card-container">
+        <MDBCard className="card-container" style={cardStyle}>
             <div className="rounded-top text-white d-flex flex-row justify-content-center align-items-center" style={{ backgroundColor: '#0281c9', height: '200px' }}>
               <div className="text-center">
                 <MDBTypography tag="h5" style={{ fontSize: '30px' }}>Tratamiento de conducto</MDBTypography>
-                <MDBCardText style={{ fontSize: '20px' }}>Estético</MDBCardText>
+                <MDBCardText style={{ fontSize: '20px' }}></MDBCardText>
               </div>
             </div>
           
             <MDBCardBody className="text-black p-4">
               <div className="mb-5">
                 <div className="p-4" style={{ backgroundColor: '#f8f9fa' }}>
-                  <MDBCardText  tag="h2" style={{ fontSize: '20px', textAlign: "justify",  height: '100px', overflow: 'hidden' }}>
-                  Este se lleva a cabo cuando se presenta una infección dental que afectara negativamente al diente. 
-                En este procedimiento se remueve tejido muerto y/o infectado del interior del diente con el motivo 
-                de salvarlo.
-                  </MDBCardText>
+                <MDBCardImage src={text_conduc} alt="Large image" className="w-100 rounded-3" />
                 </div>
               </div>
               
@@ -190,21 +189,18 @@ function Radiografia() {
     <MDBContainer className="py-5 h-100">
       <MDBRow className="justify-content-center align-items-center h-100">
         <MDBCol lg="10" xl="10">
-          <MDBCard className="card-container">
+        <MDBCard className="card-container" style={cardStyle}>
             <div className="rounded-top text-white d-flex flex-row justify-content-center align-items-center" style={{ backgroundColor: '#0281c9', height: '200px' }}>
               <div className="text-center">
                 <MDBTypography tag="h5" style={{ fontSize: '30px' }}>Radiografía</MDBTypography>
-                <MDBCardText style={{ fontSize: '20px' }}>Estético</MDBCardText>
+                <MDBCardText style={{ fontSize: '20px' }}></MDBCardText>
               </div>
             </div>
           
             <MDBCardBody className="text-black p-4">
               <div className="mb-5">
                 <div className="p-4" style={{ backgroundColor: '#f8f9fa' }}>
-                  <MDBCardText  tag="h2" style={{ fontSize: '20px', textAlign: "justify",  height: '100px', overflow: 'hidden' }}>
-                  Es una imagen médica que se utiliza en odontología para diagnosticar y evaluar la salud bucal de un paciente. Son una herramienta valiosa, 
-                  ya que proporcionan información detallada sobre los dientes, las encías, las raíces dentales y las estructuras óseas circundantes.
-                  </MDBCardText>
+                <MDBCardImage src={text_radio} alt="Large image" className="w-100 rounded-3" />
                 </div>
               </div>
               
@@ -223,22 +219,18 @@ function Extracciones() {
     <MDBContainer className="py-5 h-100">
       <MDBRow className="justify-content-center align-items-center h-100">
         <MDBCol lg="10" xl="10">
-          <MDBCard className="card-container">
+        <MDBCard className="card-container" style={cardStyle}>
             <div className="rounded-top text-white d-flex flex-row justify-content-center align-items-center" style={{ backgroundColor: '#0281c9', height: '200px' }}>
               <div className="text-center">
                 <MDBTypography tag="h5" style={{ fontSize: '30px' }}>Extracciones</MDBTypography>
-                <MDBCardText style={{ fontSize: '20px' }}>Estético</MDBCardText>
+                <MDBCardText style={{ fontSize: '20px' }}></MDBCardText>
               </div>
             </div>
           
             <MDBCardBody className="text-black p-4">
               <div className="mb-5">
                 <div className="p-4" style={{ backgroundColor: '#f8f9fa' }}>
-                  <MDBCardText  tag="h2" style={{ fontSize: '20px', textAlign: "justify",  height: '100px', overflow: 'hidden' }}>
-                  Usualmente conocido como sacar el diente. Este procedimiento se suele llevar a cabo por la necesidad 
-                de otros tratamientos o por la incapacidad de poder salvar el diente. Este suele llevarse a cabo por 
-                un dentista general.
-                  </MDBCardText>
+                <MDBCardImage src={text_extr} alt="Large image" className="w-100 rounded-3" />
                 </div>
               </div>
               
@@ -257,22 +249,18 @@ function Protesis() {
     <MDBContainer className="py-5 h-100">
       <MDBRow className="justify-content-center align-items-center h-100">
         <MDBCol lg="10" xl="10">
-          <MDBCard className="card-container">
+        <MDBCard className="card-container" style={cardStyle}>
             <div className="rounded-top text-white d-flex flex-row justify-content-center align-items-center" style={{ backgroundColor: '#0281c9', height: '200px' }}>
               <div className="text-center">
                 <MDBTypography tag="h5" style={{ fontSize: '30px' }}>Prótesis</MDBTypography>
-                <MDBCardText style={{ fontSize: '20px' }}>Estético</MDBCardText>
+                <MDBCardText style={{ fontSize: '20px' }}></MDBCardText>
               </div>
             </div>
           
             <MDBCardBody className="text-black p-4">
               <div className="mb-5">
                 <div className="p-4" style={{ backgroundColor: '#f8f9fa' }}>
-                  <MDBCardText  tag="h2" style={{ fontSize: '20px', textAlign: "justify",  height: '100px', overflow: 'hidden' }}>
-                  Tratamiento por el cual se busca que el paciente pueda volver a tener un esquema normal de su 
-                dentadura, generando que vuelva a masticar y llevar una vida dental normal. En este caso se inserta 
-                un dispositivo dental artificial el cual reemplaza algún diente perdido o dañado.
-                  </MDBCardText>
+                <MDBCardImage src={text_prot} alt="Large image" className="w-100 rounded-3" />
                 </div>
               </div>
               
@@ -291,23 +279,18 @@ function Limpiezas_dentales() {
     <MDBContainer className="py-5 h-100">
       <MDBRow className="justify-content-center align-items-center h-100">
         <MDBCol lg="10" xl="10">
-          <MDBCard className="card-container">
+        <MDBCard className="card-container" style={cardStyle}>
             <div className="rounded-top text-white d-flex flex-row justify-content-center align-items-center" style={{ backgroundColor: '#0281c9', height: '200px' }}>
               <div className="text-center">
                 <MDBTypography tag="h5" style={{ fontSize: '30px' }}>Limpiezas dentales</MDBTypography>
-                <MDBCardText style={{ fontSize: '20px' }}>Estético</MDBCardText>
+                <MDBCardText style={{ fontSize: '20px' }}></MDBCardText>
               </div>
             </div>
           
             <MDBCardBody className="text-black p-4">
               <div className="mb-5">
                 <div className="p-4" style={{ backgroundColor: '#f8f9fa' }}>
-                  <MDBCardText  tag="h2" style={{ fontSize: '20px', textAlign: "justify",  height: '100px', overflow: 'hidden' }}>
-                  En este tratamiento se elimina la capa y sarro que se acumula en el diente al pasar el tiempo. La 
-                capa es una sustancia viscosa con bacterias y restos de comida que puede dañar los dientes. Al mismo
-                 tiempo al sarro al acumularse en encía puede llevar a contraer diversas infecciones por lo que debe
-                  ser un procedimiento regular.
-                  </MDBCardText>
+                <MDBCardImage src={text_limp} alt="Large image" className="w-100 rounded-3" />
                 </div>
               </div>
               
@@ -326,21 +309,18 @@ function Periodoncia() {
     <MDBContainer className="py-5 h-100">
       <MDBRow className="justify-content-center align-items-center h-100">
         <MDBCol lg="10" xl="10">
-          <MDBCard className="card-container">
+        <MDBCard className="card-container" style={cardStyle}>
             <div className="rounded-top text-white d-flex flex-row justify-content-center align-items-center" style={{ backgroundColor: '#0281c9', height: '200px' }}>
               <div className="text-center">
                 <MDBTypography tag="h5" style={{ fontSize: '30px' }}>Periodoncia</MDBTypography>
-                <MDBCardText style={{ fontSize: '20px' }}>Estético</MDBCardText>
+                <MDBCardText style={{ fontSize: '20px' }}></MDBCardText>
               </div>
             </div>
           
             <MDBCardBody className="text-black p-4">
               <div className="mb-5">
                 <div className="p-4" style={{ backgroundColor: '#f8f9fa' }}>
-                  <MDBCardText  tag="h2" style={{ fontSize: '20px', textAlign: "justify",  height: '100px', overflow: 'hidden' }}>
-                  Serie de tratamientos que se especializan en preservar y restaurar una buena salud dental. Esta 
-                se centra en las encías al ser una parte demasiado susceptible a diversas afecciones.
-                  </MDBCardText>
+                <MDBCardImage src={text_perio} alt="Large image" className="w-100 rounded-3" />
                 </div>
               </div>
               
@@ -359,22 +339,18 @@ function Bichectomia() {
     <MDBContainer className="py-5 h-100">
       <MDBRow className="justify-content-center align-items-center h-100">
         <MDBCol lg="10" xl="10">
-          <MDBCard className="card-container">
+        <MDBCard className="card-container" style={cardStyle}>
             <div className="rounded-top text-white d-flex flex-row justify-content-center align-items-center" style={{ backgroundColor: '#0281c9', height: '200px' }}>
               <div className="text-center">
                 <MDBTypography tag="h5" style={{ fontSize: '30px' }}>Bichectomia</MDBTypography>
-                <MDBCardText style={{ fontSize: '20px' }}>Estético</MDBCardText>
+                <MDBCardText style={{ fontSize: '20px' }}></MDBCardText>
               </div>
             </div>
           
             <MDBCardBody className="text-black p-4">
               <div className="mb-5">
                 <div className="p-4" style={{ backgroundColor: '#f8f9fa' }}>
-                  <MDBCardText  tag="h2" style={{ fontSize: '20px', textAlign: "justify",  height: '100px', overflow: 'hidden' }}>
-                  Operación en la cual se extrae las bolsas de Bichat, la cual son una seria de bolas de grasa que 
-                están ubicadas debajo de las mejillas. Con esta operación se busca mejorar el aspecto del rostro. 
-                Esta no deja cicatrices al realizarse por la parte interior de la boca además de ser ambulatoria.
-                  </MDBCardText>
+                <MDBCardImage src={text_biche} alt="Large image" className="w-100 rounded-3" />
                 </div>
               </div>
               
@@ -393,21 +369,18 @@ function Toxina_botulinica() {
     <MDBContainer className="py-5 h-100">
       <MDBRow className="justify-content-center align-items-center h-100">
         <MDBCol lg="10" xl="10">
-          <MDBCard className="card-container">
+        <MDBCard className="card-container" style={cardStyle}>
             <div className="rounded-top text-white d-flex flex-row justify-content-center align-items-center" style={{ backgroundColor: '#0281c9', height: '200px' }}>
               <div className="text-center">
                 <MDBTypography tag="h5" style={{ fontSize: '30px' }}>Toxina Botulínica</MDBTypography>
-                <MDBCardText style={{ fontSize: '20px' }}>Estético</MDBCardText>
+                <MDBCardText style={{ fontSize: '20px' }}></MDBCardText>
               </div>
             </div>
           
             <MDBCardBody className="text-black p-4">
               <div className="mb-5">
                 <div className="p-4" style={{ backgroundColor: '#f8f9fa' }}>
-                  <MDBCardText  tag="h2" style={{ fontSize: '20px', textAlign: "justify",  height: '100px', overflow: 'hidden' }}>
-                  Se utiliza en medicina y en procedimientos estéticos para tratar una variedad de afecciones y trastornos, así como para reducir
-                   temporalmente la apariencia de las arrugas faciales. Los productos comerciales más conocidos que contienen toxina botulínica incluyen Botox, Dysport y Xeomin
-                  </MDBCardText>
+                <MDBCardImage src={text_toxi} alt="Large image" className="w-100 rounded-3" />
                 </div>
               </div>
               

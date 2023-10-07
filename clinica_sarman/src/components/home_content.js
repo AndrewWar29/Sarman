@@ -2,6 +2,7 @@ import React from "react";
 import Card from 'react-bootstrap/Card';
 import CardGroup from 'react-bootstrap/CardGroup';
 import equipo from '../images/equipo.jpg';
+import horario from '../images/horario.jpg';
 import pago from '../images/pago.jpg';
 import comentarios from '../images/comentarios.jpg';
 import "../css/home_content.css";
@@ -20,10 +21,10 @@ function Boxes() {
           </Card.Body>
         </Card>
         <Card className="card_pro">
-          <Card.Img variant="top" src={equipo} />
+          <Card.Img variant="top" src={horario} />
           <Card.Body>
             <Card.Text>
-            Nuestro equipo! 🤩 los cuales se encargarán de entregarte un servicio integral 🌟🦷. ¡Nos preocupamos por tu salud bucal! Agenda tu hora ¡te esperamos!
+            ¡Nuestros horarios de atención! 🤩 Todas las horas puedes agendarlas con anticipación, escríbenos por interno. Si tienes una emergencia dental no dudes en avisarnos
             </Card.Text>
           </Card.Body>
         </Card>

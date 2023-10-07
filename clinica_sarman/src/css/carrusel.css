@@ -4,12 +4,9 @@
     opacity: 0.85;
 }
 
-.carousel-inner h5, p{
-    font-weight: bold;
-}
+
 
 .pdecarrusel{
     color:white;
-    font-weight: bold;
     text-shadow: 2px 2px 4px #000000;
 }
