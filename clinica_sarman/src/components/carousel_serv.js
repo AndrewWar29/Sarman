@@ -19,15 +19,19 @@ function Carousel_serv() {
       <Carousel.Item>
         <Service_wrapper_1/>
       </Carousel.Item>
+
       <Carousel.Item>
         <Service_wrapper_2 />
       </Carousel.Item>
+
       <Carousel.Item>
         <Service_wrapper_3 />
       </Carousel.Item>
+
       <Carousel.Item>
         <Service_wrapper_4 />
       </Carousel.Item>
+      
     </Carousel>
   );
 }

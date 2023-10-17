@@ -5,6 +5,7 @@ import{ Blanqueamiento_dental, Restauraciones_dentales, Coronas_dentales, Pediat
 
 function Service_wrapper_1() {
         return (
+          <div>
           <Row xs={1} md={2} lg={3} className="g-4">
             <Col>
               <Blanqueamiento_dental/>
@@ -16,10 +17,12 @@ function Service_wrapper_1() {
               <Coronas_dentales/> {/* Replace with your third component */}
             </Col>
           </Row>
+          </div>
         );
 }
 function Service_wrapper_2() {
   return (
+    <div>
     <Row xs={1} md={2} lg={3} className="g-4">
       <Col>
         <Pediatria/>
@@ -31,10 +34,12 @@ function Service_wrapper_2() {
         <Radiografia/> {/* Replace with your third component */}
       </Col>
     </Row>
+    </div>
   );
 }
 function Service_wrapper_3() {
   return (
+    <div>
     <Row xs={1} md={2} lg={3} className="g-4">
       <Col>
         <Extracciones/>
@@ -46,10 +51,12 @@ function Service_wrapper_3() {
         <Limpiezas_dentales/> {/* Replace with your third component */}
       </Col>
     </Row>
+    </div>
   );
 }
 function Service_wrapper_4() {
   return (
+    <div>
     <Row xs={1} md={2} lg={3} className="g-4">
       <Col>
         <Periodoncia/>
@@ -61,6 +68,7 @@ function Service_wrapper_4() {
       <Toxina_botulinica/>
       </Col>
     </Row>
+    </div>
   );
 }
 

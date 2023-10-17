@@ -189,18 +189,18 @@ function Radiografia() {
     <MDBContainer className="py-5 h-100">
       <MDBRow className="justify-content-center align-items-center h-100">
         <MDBCol lg="10" xl="10">
-        <MDBCard className="card-container" style={cardStyle}>
+          <MDBCard className="card-container" style={cardStyle}>
             <div className="rounded-top text-white d-flex flex-row justify-content-center align-items-center" style={{ backgroundColor: '#0281c9', height: '200px' }}>
               <div className="text-center">
                 <MDBTypography tag="h5" style={{ fontSize: '30px' }}>Radiografía</MDBTypography>
-                <MDBCardText style={{ fontSize: '20px' }}></MDBCardText>
+                <MDBCardText style={{ fontSize: '20px' }}>Bitewing y retroalveolar</MDBCardText> {/* Agrega el subtítulo aquí */}
               </div>
             </div>
           
             <MDBCardBody className="text-black p-4">
               <div className="mb-5">
                 <div className="p-4" style={{ backgroundColor: '#f8f9fa' }}>
-                <MDBCardImage src={text_radio} alt="Large image" className="w-100 rounded-3" />
+                  <MDBCardImage src={text_radio} alt="Large image" className="w-100 rounded-3" />
                 </div>
               </div>
               
@@ -213,6 +213,7 @@ function Radiografia() {
     </MDBContainer>
   );
 }
+
 
 function Extracciones() {
   return (

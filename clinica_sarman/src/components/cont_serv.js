@@ -25,10 +25,8 @@ function ContServ() {
   </Card>
 
     
-    <div className="cont-serv">
-
+    <div >
       <Carousel_serv></Carousel_serv> 
- 
     </div>
     </div>
     </div>

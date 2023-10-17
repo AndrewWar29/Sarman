@@ -30,3 +30,25 @@ button{
   .category-list li {
     margin-right: 10px; /* Ajusta el espaciado entre los botones como desees */
   }
+  
+  /* Estilo personalizado para el Select */
+.react-select-container {
+  width: 200px; /* Ajusta el ancho a tu preferencia */
+}
+
+/* Estilo personalizado para el Dropdown */
+.react-select__control {
+  min-height: 50px; /* Ajusta la altura a tu preferencia */
+}
+
+/* Estilo personalizado para las opciones */
+.react-select__menu {
+  max-height: 200px; /* Ajusta la altura máxima a tu preferencia */
+}
+/* Estilo personalizado para centrar horizontalmente el Select */
+.centered-select {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
