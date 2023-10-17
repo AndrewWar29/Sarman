@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "../css/contact_content.css";
 import Card from 'react-bootstrap/Card';
 import Row from 'react-bootstrap/Row';
@@ -66,18 +66,27 @@ const doctorsData = [
 ];
 
 function Contact_content() {
-  
   const [formData, setFormData] = useState({
-    name: '',
-    lastName: '',
-    phoneNumber: '',
-    rut: '',
-    email: '',
-    procedure: '',
+    name: "",
+    lastName: "",
+    phoneNumber: "",
+    rut: "",
+    email: "",
+    procedure: "",
   });
 
   const [selectedDoctor, setSelectedDoctor] = useState(null);
-  const [submitting, setSubmitting] = useState(false); // Track form submission state
+  const [submitting, setSubmitting] = useState(false);
+  const formRef = useRef(null); // Add a reference to the form element
+
+  useEffect(() => {
+    if (selectedDoctor) {
+      formRef.current.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  }, [selectedDoctor]);
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -89,40 +98,43 @@ function Contact_content() {
 
   const handleDoctorSelect = (doctor) => {
     if (selectedDoctor === doctor) {
-      // If the same doctor is clicked again, reset the form
       setSelectedDoctor(null);
       setFormData({
-        name: '',
-        lastName: '',
-        phoneNumber: '',
-        rut: '',
-        email: '',
-        procedure: '',
+        name: "",
+        lastName: "",
+        phoneNumber: "",
+        rut: "",
+        email: "",
+        procedure: "",
       });
     } else {
       setSelectedDoctor(doctor);
+  
+      if (formRef.current) {
+        formRef.current.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      }
     }
-  };
+  }
 
   const handleSubmit = () => {
     if (selectedDoctor) {
       const { name, lastName, phoneNumber, rut, email, procedure } = formData;
 
-      // Verificar que todos los campos estén llenos
       if (name && lastName && phoneNumber && rut && email && procedure) {
-        setSubmitting(true); // Set submitting state to true while sending message
+        setSubmitting(true);
         const doctor = selectedDoctor;
         const whatsappMessage = `Hola ${doctor.name}, estoy interesado en el procedimiento de ${procedure}. Mis datos son los siguientes:\n\nNombre y apellido: ${name} ${lastName}\nNúmero de teléfono: ${phoneNumber}\nRUT: ${rut}\nCorreo: ${email}`;
         const whatsappURL = `https://wa.me/${doctor.number}?text=${encodeURIComponent(whatsappMessage)}`;
 
-        // Simulate a delay to show "Contactando a Dr. [Doctor's Name]..."
         setTimeout(() => {
-          window.open(whatsappURL, '_blank');
-          setSubmitting(false); // Reset submitting state
-        }, 1500); // Adjust the delay time as needed
+          window.open(whatsappURL, "_blank");
+          setSubmitting(false);
+        }, 1500);
       } else {
-        // Aquí puedes mostrar un mensaje de error o tomar la acción que desees
-        alert('Por favor, complete todos los campos antes de enviar el mensaje de WhatsApp.');
+        alert("Por favor, complete todos los campos antes de enviar el mensaje de WhatsApp.");
       }
     }
   }
@@ -152,7 +164,6 @@ function Contact_content() {
                     variant="primary"
                     onClick={() => handleDoctorSelect(doctor)}
                     className="whatsapp-button"
-
                   >
                     Contactar por WhatsApp <BsWhatsapp />
                   </Button>
@@ -165,7 +176,7 @@ function Contact_content() {
   
       {selectedDoctor && (
         <Card>
-          <Card.Body className="aboutus-card1">
+          <Card.Body className="aboutus-card1" ref={formRef}>
             <Card.Text className="aboutus-text1">
               Contactando a {selectedDoctor.name}
             </Card.Text>
