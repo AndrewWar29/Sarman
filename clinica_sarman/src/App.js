@@ -9,10 +9,10 @@ import { Services} from './subpage/servicios';
 import { Advice} from './subpage/consejos';
 import { Cases} from './subpage/casos_clinicos';
 import { Contact } from './subpage/contact';
-import ReactGA from 'react-ga';
+import ReactGA from 'react-ga4';
 
 // Initialize Google Analytics with your Tracking ID
-ReactGA.initialize('G-Z1HCJQ2XEW')
+ReactGA.initialize('G-Z1HCJQ2XEW');
 
 
 function App() {
