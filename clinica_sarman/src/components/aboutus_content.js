@@ -29,7 +29,7 @@ function AboutCard() {
         <Card.Img variant="top" src={equipo} />
         <Card.Body>
           <Card.Text className="card-text1">
-            Contamos con 5 excelentes profesionales y especialistas
+            Contamos con 6 excelentes profesionales y especialistas
           </Card.Text>
         </Card.Body>
       </Card>
