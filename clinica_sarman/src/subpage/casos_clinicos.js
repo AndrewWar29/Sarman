@@ -5,6 +5,8 @@ import { Banner} from "../components/banner";
 import { Footer} from "../components/footer";
 import React from "react";
 
+
+
 //Home page content
 function Cases() {
     return (

@@ -7,6 +7,8 @@ import Form from 'react-bootstrap/Form';
 import { BsWhatsapp } from "react-icons/bs";
 import { TiContacts } from "react-icons/ti";
 
+import ReactGA from 'react-ga4';
+
 import alvaroImage from '../images/alvaro.png';
 import constanzaImage from '../images/constanza.png';
 import pabloImage from '../images/pablo.png';
@@ -107,6 +109,20 @@ function Contact_content() {
         email: "",
         procedure: "",
       });
+
+      switch (doctor) {
+        case 'Dr. Alvaro Moraga':
+          ReactGA.send('ContactContent', 'ButtonClick', 'Cuestionario Alvaro');
+          break;
+        case 'Dra. Constanza Nuñez':
+          ReactGA.send('ContactContent', 'ButtonClick', 'Cuestionario Constanza');
+          break;
+        case 'Dr. Pablo Sarce':
+          ReactGA.send('ContactContent', 'ButtonClick', 'Cuestionario Pablo');
+          break;
+      }
+
+
     } else {
       setSelectedDoctor(doctor);
   
@@ -133,6 +149,20 @@ function Contact_content() {
           window.open(whatsappURL, "_blank");
           setSubmitting(false);
         }, 1500);
+      ReactGA.send('ContactContent', 'ButtonClick', 'Submit');
+
+      switch (doctor.name) {
+        case 'Dr. Alvaro Moraga':
+          ReactGA.send('ContactContent', 'ButtonClick', 'Toma hora Alvaro');
+          break;
+        case 'Dra. Constanza Nuñez':
+          ReactGA.send('ContactContent', 'ButtonClick', 'Toma hora Constanza');
+          break;
+        case 'Dr. Pablo Sarce':
+          ReactGA.send('ContactContent', 'ButtonClick', 'Toma hora Pablo');
+          break;
+      }
+
       } else {
         alert("Por favor, complete todos los campos antes de enviar el mensaje de WhatsApp.");
       }

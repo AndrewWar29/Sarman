@@ -8,6 +8,7 @@ import { Footer } from "../components/footer";
 import { Boxes } from "../components/home_content";
 import ReactGA from 'react-ga4';
 
+
 // Home page content
 function Home() {
   useEffect(() => {

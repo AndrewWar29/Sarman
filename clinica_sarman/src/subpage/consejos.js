@@ -5,10 +5,15 @@ import { Carrusel} from "../components/carrusel";
 import { Banner} from "../components/banner";
 import { Footer} from "../components/footer";
 import {Consejos} from "../components/tips"
-import React from "react";
+import React, { useEffect } from "react";
+import ReactGA from 'react-ga4';
 
 //Home page content
 function Advice() {
+    useEffect(() => {
+      ReactGA.send('pageview', '/consejos');
+    }, []);
+  
     return (
       <React.Fragment>
       <Banner/>
