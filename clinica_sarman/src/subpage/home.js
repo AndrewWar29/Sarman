@@ -23,6 +23,7 @@ function Home() {
       <Banner />
       <Navigation_bar />
       <Carrusel />
+      <div style={{ borderBottom: '20px solid #0281c9' }}></div>
       <Boxes />
       <Footer />
     </React.Fragment>

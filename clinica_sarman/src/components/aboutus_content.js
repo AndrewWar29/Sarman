@@ -8,6 +8,13 @@ import equipo from '../images/equipo.png';
 import kids from '../images/kids.jpg';
 import local from '../images/local.jpg';
 import { BsWhatsapp } from 'react-icons/bs';
+import "../css/home_content.css";
+import CardGroup from 'react-bootstrap/CardGroup';
+import { LiaToothSolid } from "react-icons/lia";
+import alvaroImage from '../images/Alvaro1.jpg';
+import constanzaImage from '../images/Constanza1.jpg';
+import pabloImage from '../images/Pablo1.png';
+
 
 const AboutCard = () => {
   const [formData, setFormData] = useState({
@@ -81,6 +88,33 @@ const AboutCard = () => {
       </Card>
       </Row>
 
+      <div style={{ borderBottom: '20px solid #0281c9' }}></div>
+
+      <Card style={{ backgroundColor: '#f5f5f5' }}>
+      <Card.Body >
+        <Card.Text className="aboutus-text1 text-center"> Dentistas <LiaToothSolid /> </Card.Text>
+        <Card.Text className="aboutus-text2 text-center">
+          Conoce mejor a los dentistas de nuestra clinica
+        </Card.Text>
+        </Card.Body>
+        <div className="centered-container">
+      <CardGroup>
+        <Card className="card_pro">
+          <Card.Img variant="top" src={alvaroImage} />
+        </Card>
+        <Card className="card_pro">
+          <Card.Img variant="top" src={constanzaImage} />
+        </Card>
+        <Card className="card_pro">
+          <Card.Img variant="top" src={pabloImage} />
+        </Card>
+      </CardGroup>
+      </div>
+      </Card>
+
+      <div style={{ borderBottom: '20px solid #0281c9' }}></div>
+
+      
       <Card>
       <Card.Body className="aboutus-card1">
         <Card.Text className="aboutus-text1 text-center"> Crear convenio </Card.Text>
@@ -130,6 +164,16 @@ const AboutCard = () => {
           </Card.Text>
         </Card.Body>
       </Card>
+
+
+
+
+
+
+
+
+
+
     </>
   );
 };

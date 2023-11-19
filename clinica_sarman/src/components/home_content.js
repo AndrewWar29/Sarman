@@ -9,6 +9,7 @@ import "../css/home_content.css";
 
 function Boxes() {
     return (
+      
       <div className="centered-container">
       <CardGroup>
         <Card className="card_pro">

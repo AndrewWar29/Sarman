@@ -29,7 +29,7 @@ function Navigation_bar() {
                 <Nav.Link href="/nosotros"><a className="linkText" href="/nosotros"><AiOutlineInfoCircle/> Nosotros</a></Nav.Link>
                 <Nav.Link href="/servicios"><a className="linkText" href="/servicios"><MdOutlineMedicalServices/> Servicios </a></Nav.Link>
                 <Nav.Link href="/consejos"><a className="linkText" href="/consejos"><AiOutlineBulb/> Consejos </a></Nav.Link>
-                <Nav.Link href="/contacto"><a className="linkText" href="/contacto"><TiContacts/> Contacto</a></Nav.Link>
+                <Nav.Link href="/reserva"><a className="linkText" href="/reserva"><TiContacts/> Reserva</a></Nav.Link>
             </Nav>
             </Navbar.Collapse>
             </Nav>

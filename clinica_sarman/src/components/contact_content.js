@@ -173,7 +173,7 @@ function Contact_content() {
     <>
       <Card>
         <Card.Body className="aboutus-card1">
-          <Card.Text className="aboutus-text1 text-center"> Contacto </Card.Text>
+          <Card.Text className="aboutus-text1 text-center"> Reserva </Card.Text>
           <Card.Text className="aboutus-text2 text-center">
             Reserva tu hora con alguno de nuestros tres especialistas vía WhatsApp📲
           </Card.Text>
