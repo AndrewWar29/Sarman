@@ -14,7 +14,7 @@ function Footer() {
     <MDBFooter style={{ backgroundColor: '#0281c9' }} className='text-center text-lg-start text-white'>
       <section className='d-flex justify-content-center align-items-center p-2'>
         <div className='text-center me-3'>
-          <span>Contactanos mediante nuestras redes sociales:</span>
+          <span>Contáctanos mediante nuestras redes sociales:</span>
         </div>
         <div className='d-flex'>
           <a href='https://www.facebook.com/profile.php?id=100064182994993' className='me-3 text-reset'>
@@ -43,7 +43,7 @@ function Footer() {
               </p>
               <p><a><BsTelephone className='icon-large'/></a>
               <MDBIcon icon="phone" className="me-3" />
-                <a href='/contacto' className='text-reset'>
+                <a href='reserva' className='text-reset'>
                   Contacto profesionales
                 </a>
               </p>
@@ -65,13 +65,13 @@ function Footer() {
                 </a>
               </p>
               <p>
-                <a href='/profesionales' className='text-reset'>
-                  Profesionales
+                <a href='/servicios' className='text-reset'>
+                  Servicios
                 </a>
               </p>
               <p>
-                <a href='/servicios' className='text-reset'>
-                  Servicios
+                <a href='/consejos' className='text-reset'>
+                  Consejos
                 </a>
               </p>
             </MDBCol>

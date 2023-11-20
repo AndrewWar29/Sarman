@@ -14,6 +14,15 @@ import { LiaToothSolid } from "react-icons/lia";
 import alvaroImage from '../images/Alvaro1.jpg';
 import constanzaImage from '../images/Constanza1.jpg';
 import pabloImage from '../images/Pablo1.png';
+import ListGroup from 'react-bootstrap/ListGroup';
+import Carousel from 'react-bootstrap/Carousel';
+import BrunoImage from '../images/Bruno.jpg';
+import ConsaludImage from '../images/Consalud.jpg';
+import FonasaImage from '../images/Fonasa.jpg';
+import KratosImage from '../images/Kratos.jpg';
+import PolesportImage from '../images/PoleSport.jpg';
+import ProfesoresImage from '../images/Profesores.jpg';
+import RegionalImage from '../images/Regional.jpg';
 
 
 const AboutCard = () => {
@@ -94,7 +103,7 @@ const AboutCard = () => {
       <Card.Body >
         <Card.Text className="aboutus-text1 text-center"> Dentistas <LiaToothSolid /> </Card.Text>
         <Card.Text className="aboutus-text2 text-center">
-          Conoce mejor a los dentistas de nuestra clinica
+          Conoce mejor a los dentistas de nuestra clínica
         </Card.Text>
         </Card.Body>
         <div className="centered-container">
@@ -114,7 +123,87 @@ const AboutCard = () => {
 
       <div style={{ borderBottom: '20px solid #0281c9' }}></div>
 
-      
+      <Card>
+      <Card.Body className="aboutus-card1">
+      <Card.Text className="aboutus-text1 text-center">
+          Nuestros Convenios
+        </Card.Text>
+        <Card.Text className="aboutus-text2 text-center"  style={{ marginBottom: '35px' }}>
+          Conoce los convenios disponibles en nuestra clínica
+        </Card.Text>
+        <div className="row">
+          <div className="col-lg-6" style={{ height: '100%' }}>
+            <ListGroup style={{ height: '100%', marginBottom: '35px'}}>
+              <ListGroup.Item className="list-text" action href="https://www.instagram.com/p/CvuVTwnAU5Z/">Colegio de profesores de Atacama</ListGroup.Item>
+              <ListGroup.Item className="list-text">Academia Amanda en Vivo</ListGroup.Item>
+              <ListGroup.Item className="list-text" action href="https://www.instagram.com/p/CmXgmnisr6W/">Academia Polesport</ListGroup.Item>
+              <ListGroup.Item className="list-text" action href="https://www.instagram.com/p/CmfmDX7smGj/">Escuela de fútbol Bruno Romo</ListGroup.Item>
+              <ListGroup.Item className="list-text">DGAC</ListGroup.Item>
+              <ListGroup.Item className="list-text" action href="https://www.instagram.com/p/CTpn--ILvGV/">Gobierno regional</ListGroup.Item>
+              <ListGroup.Item className="list-text" action href="https://www.instagram.com/p/CtsTy0YM_uq/">Gym Kratos Box</ListGroup.Item>
+              <ListGroup.Item className="list-text" action href="https://www.instagram.com/p/CTpn--ILvGV/">Minera La Condesa</ListGroup.Item>
+              <ListGroup.Item className="list-text">Copiapó Voley Club</ListGroup.Item>
+              <ListGroup.Item className="list-text" action href="https://www.instagram.com/p/CTpn--ILvGV/">Isapre Consalud</ListGroup.Item>
+            </ListGroup>
+          </div>
+
+        <div className="col-lg-6" style={{ height: '100%' }}>
+        <Carousel style={{ height: '100%'}}>  
+          <Carousel.Item>
+            <img
+              className="d-block w-100"
+              src={BrunoImage}
+              alt="Imagen 1"
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              className="d-block w-100"
+              src={ConsaludImage}
+              alt="Imagen 1"
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              className="d-block w-100"
+              src={FonasaImage}
+              alt="Imagen 1"
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              className="d-block w-100"
+              src={KratosImage}
+              alt="Imagen 1"
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              className="d-block w-100"
+              src={PolesportImage}
+              alt="Imagen 1"
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              className="d-block w-100"
+              src={ProfesoresImage}
+              alt="Imagen 1"
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              className="d-block w-100"
+              src={RegionalImage}
+              alt="Imagen 1"
+            />
+          </Carousel.Item>
+        </Carousel>
+      </div>
+    </div>
+      </Card.Body>
+    </Card>
+
       <Card>
       <Card.Body className="aboutus-card1">
         <Card.Text className="aboutus-text1 text-center"> Crear convenio </Card.Text>
